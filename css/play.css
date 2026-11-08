@@ -17,3 +17,18 @@
 .ps-game-container-wrap .game-container { padding: 0; min-height: 0; align-items: center; justify-content: center; background: #17102a; overflow: hidden; display: flex; }
 
 .play-page .ps-games-section { padding-bottom: 20px; }
+
+/* ===== mode app (sudah terpasang) ===== */
+body.is-installed .ps-topbar { display: none; }
+body.is-installed .ps-app-head,
+body.is-installed .ps-app-section,
+body.is-installed .ps-footer,
+body.is-installed #installStatus,
+body.is-installed .ps-app-size { display: none; }
+body.is-installed .ps-app-install { padding: 10px 16px; }
+body.is-installed .ps-install-full { font-size: 1.6rem; padding: 22px 20px; border-radius: 18px; background: linear-gradient(135deg,#01875f,#00c853); color: #fff; }
+body.is-installed .ps-game-container-wrap { margin: 0; border: 0; border-radius: 0; min-height: 100vh; }
+body.is-installed .ps-game-container-wrap .game-container { min-height: 100vh; align-items: center; justify-content: center; }
+body.is-installed #gameContainer { width: 100%; max-width: 720px; height: 100vh; display: flex; align-items: center; justify-content: center; }
+body.is-installed .game-container > .stage { width: 100%; margin: 0; }
+body.is-installed .game-container canvas { width: 100%; height: 100%; max-height: 100vh; }

@@ -134,13 +134,18 @@ window.addEventListener('DOMContentLoaded', () => {
   function markInstalled(id) { const arr = getInstalled(); if (!arr.includes(id)) { arr.push(id); localStorage.setItem(installedKey, JSON.stringify(arr)); } }
   const isInstalled = () => getInstalled().includes(g.id);
 
+  /* ----- deteksi standalone / terpasang ----- */
+  const isStandalone = () => window.matchMedia && window.matchMedia('(display-mode: standalone)').matches;
+
   function refreshInstallUI() {
     if (isInstalled()) {
-      btn.textContent = 'TERPASANG ✓';
+      document.body.classList.add('is-installed');
+      btn.textContent = 'MAIN!';
       btn.className = 'ps-install-btn ps-install-full installed';
       btn.disabled = false;
-      status.textContent = 'Aplikasi sudah terpasang di HP kamu!';
+      status.textContent = '';
     } else {
+      document.body.classList.remove('is-installed');
       btn.textContent = 'INSTALL — ' + m.size + ' MB';
       btn.className = 'ps-install-btn ps-install-full';
       btn.disabled = false;
@@ -158,14 +163,15 @@ window.addEventListener('DOMContentLoaded', () => {
     markInstalled(g.id);
     deferred = null;
     refreshInstallUI();
-    status.textContent = g.name + ' berhasil dipasang! Cari di layar utama HP kamu 🎉';
+    status.textContent = g.name + ' berhasil dipasang! Cari ikonnya di layar utama HP kamu.';
     BG.sfx('win');
+    container.scrollIntoView({ behavior: 'smooth' });
   });
 
   btn.addEventListener('click', async () => {
     if (isInstalled()) {
-      /* sudah terpasang: langsung main ulang */
-      container.scrollIntoView({ behavior: 'smooth' });
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      BG.sfx('click');
       return;
     }
     if (deferred) {
