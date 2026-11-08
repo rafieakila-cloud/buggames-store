@@ -266,13 +266,6 @@
     "desc": "Aku mikir angka 1-100. 7 kesempatan!"
   },
   {
-    "id": "higherlower",
-    "name": "Lebih Tinggi?",
-    "cat": "kuis",
-    "icon": "arrows",
-    "desc": "Tebak kartu berikutnya lebih tinggi atau rendah!"
-  },
-  {
     "id": "oddoneout",
     "name": "Cari yang Beda",
     "cat": "kuis",
@@ -306,20 +299,6 @@
     "cat": "kuis",
     "icon": "rps",
     "desc": "5 ronde melawan Buggy. Mana yang menang?"
-  },
-  {
-    "id": "dice",
-    "name": "Duel Dadu",
-    "cat": "kuis",
-    "icon": "dice",
-    "desc": "Lempar 2 dadu, angka tertinggi menang!"
-  },
-  {
-    "id": "coin",
-    "name": "Tebak Koin",
-    "cat": "kuis",
-    "icon": "coin",
-    "desc": "Kepala atau ekor? 10 lemparan!"
   },
   {
     "id": "clicker",
@@ -376,27 +355,6 @@
     "cat": "puzzle",
     "icon": "code",
     "desc": "Tebak kode 4 warna!"
-  },
-  {
-    "id": "bingo",
-    "name": "Bingo Bug",
-    "cat": "kuis",
-    "icon": "cards",
-    "desc": "Lengkapi baris lebih dulu!"
-  },
-  {
-    "id": "slotspin",
-    "name": "Slot Spin",
-    "cat": "kuis",
-    "icon": "slot",
-    "desc": "Putar slot, kejar jackpot!"
-  },
-  {
-    "id": "rodhoki",
-    "name": "Roda Hoki",
-    "cat": "kuis",
-    "icon": "wheel",
-    "desc": "Putar roda, menangkan hadiah!"
   },
   {
     "id": "tebakharga",
@@ -467,13 +425,6 @@
     "cat": "arcade",
     "icon": "goal",
     "desc": "Selamatkan gawang 5 tendangan!"
-  },
-  {
-    "id": "pacuankura",
-    "name": "Pacuan Kura-Kura",
-    "cat": "kuis",
-    "icon": "turtle",
-    "desc": "Bertaruh kura-kura mana yang menang!"
   },
   {
     "id": "kelereng",

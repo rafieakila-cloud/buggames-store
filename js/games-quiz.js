@@ -471,37 +471,6 @@ BG.register({
   }
 });
 
-/* ============ 39. LEBIH TINGGI / RENDAH ============ */
-BG.register({
-  id: 'higherlower', name: 'Lebih Tinggi?', desc: 'Tebak kartu berikutnya lebih tinggi atau rendah!', cat: 'kuis', icon: 'arrows', tags: 'kartu higher lower tebak',
-  start(el, s) {
-    const NAMES = ['', 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    let current = BG.rand(1, 13), streak = 0, over = false;
-    el.innerHTML = '<div class="panel center-col" style="max-width:380px;text-align:center"><div class="hud" style="width:100%">' + BG.hudPill('Streak', 'hl-streak') + '</div>' +
-      '<div id="hl-card" style="width:130px;height:180px;border-radius:16px;background:#fff8ec;border:4px solid var(--ink);display:grid;place-items:center;font-size:3.4rem;font-weight:900;color:var(--ink);box-shadow:var(--hard-shadow);margin:6px auto"></div>' +
-      '<div style="display:flex;gap:12px"><button class="btn btn-teal" id="hl-high" style="min-width:120px">▲ Lebih Tinggi</button><button class="btn btn-pink" id="hl-low" style="min-width:120px">▼ Lebih Rendah</button></div>' +
-      '<p id="hl-msg" style="min-height:1.4em;color:#d9c9f2;font-size:.85rem">Kartu berikutnya?</p></div>';
-    const cardEl = el.querySelector('#hl-card'), streakEl = el.querySelector('#hl-streak'), msg = el.querySelector('#hl-msg');
-    function renderCard() { cardEl.textContent = NAMES[current]; streakEl.textContent = streak; }
-    function guess(higher) {
-      if (over) return;
-      const next = BG.rand(1, 13);
-      const correct = higher ? next > current : next < current;
-      cardEl.textContent = NAMES[next];
-      if (next === current) { msg.textContent = 'Seri! Kartu sama.'; BG.sfx('click'); current = next; return; }
-      if (correct) {
-        streak++; streakEl.textContent = streak; BG.sfx('good'); msg.textContent = 'Benar! Lagi?'; current = next;
-      } else {
-        over = true; BG.sfx('bad');
-        msg.textContent = 'Salah! Kartunya ' + NAMES[next] + '.';
-        BG.endScreen(el.querySelector('.panel').parentElement, { score: streak * 10, bestKey: 'higherlower', title: 'Tebakan Meleset!', sub: 'Streak kamu: ' + streak + '.', scoreLabel: 'Streak ' + streak, onRetry: retry(el, s, 'higherlower') });
-      }
-    }
-    el.querySelector('#hl-high').addEventListener('click', () => guess(true));
-    el.querySelector('#hl-low').addEventListener('click', () => guess(false));
-    renderCard();
-  }
-});
 
 /* ============ 40. CARI YANG BEDA ============ */
 BG.register({
@@ -674,66 +643,7 @@ BG.register({
   }
 });
 
-/* ============ 45. DUEL DADU ============ */
-BG.register({
-  id: 'dice', name: 'Duel Dadu', desc: 'Lempar 2 dadu, angka tertinggi menang!', cat: 'kuis', icon: 'dice', tags: 'dadu dice lempar',
-  start(el, s) {
-    let round = 0, wins = 0; const TOTAL = 5;
-    const PIP = ['', '⚀', '⚁', '⚂', '⚃', '⚄', '⚅'];
-    el.innerHTML = '<div class="panel center-col" style="max-width:420px;text-align:center"><div class="hud" style="width:100%">' + BG.hudPill('Menang', 'dc-wins') + '<div class="hud-pill">Ronde <b id="dc-round">1</b>/' + TOTAL + '</div></div>' +
-      '<div style="display:flex;gap:24px;justify-content:center;font-size:2rem;margin:10px 0"><div><div style="font-size:.8rem;color:#b8a6d9">KAMU</div><div id="dc-you" style="font-size:3.6rem">🎲🎲</div><div id="dc-you-n" style="font-weight:900">–</div></div>' +
-      '<div style="font-size:2.4rem;align-self:center">VS</div>' +
-      '<div><div style="font-size:.8rem;color:#b8a6d9">BUGGY</div><div id="dc-ai" style="font-size:3.6rem">🎲🎲</div><div id="dc-ai-n" style="font-weight:900">–</div></div></div>' +
-      '<button class="btn btn-lime btn-block" id="dc-roll">Lempar Dadu!</button></div>';
-    const youEl = el.querySelector('#dc-you'), aiEl = el.querySelector('#dc-ai'), youN = el.querySelector('#dc-you-n'), aiN = el.querySelector('#dc-ai-n'),
-      winsEl = el.querySelector('#dc-wins'), roundEl = el.querySelector('#dc-round'), rollBtn = el.querySelector('#dc-roll');
-    rollBtn.addEventListener('click', () => {
-      round++; roundEl.textContent = Math.min(round + 1, TOTAL);
-      const y1 = BG.rand(1, 6), y2 = BG.rand(1, 6), a1 = BG.rand(1, 6), a2 = BG.rand(1, 6);
-      const ySum = y1 + y2, aSum = a1 + a2;
-      youEl.textContent = PIP[y1] + PIP[y2]; aiEl.textContent = PIP[a1] + PIP[a2];
-      youN.textContent = ySum; aiN.textContent = aSum;
-      if (ySum > aSum) { wins++; winsEl.textContent = wins; BG.sfx('good'); }
-      else if (ySum < aSum) BG.sfx('bad');
-      else BG.sfx('click');
-      if (round >= TOTAL) {
-        rollBtn.disabled = true;
-        BG.endScreen(el.querySelector('.panel').parentElement, { score: wins * 20, bestKey: 'dice', win: wins >= 3, title: wins >= 3 ? 'Menang!' : 'Kalah!', sub: 'Kamu menang ' + wins + ' dari ' + TOTAL + ' ronde.', scoreLabel: wins + '/' + TOTAL, onRetry: retry(el, s, 'dice') });
-      }
-    });
-  }
-});
 
-/* ============ 46. TEBAK KOIN ============ */
-BG.register({
-  id: 'coin', name: 'Tebak Koin', desc: 'Kepala atau ekor? 10 lemparan!', cat: 'kuis', icon: 'coin', tags: 'koin coin tebak peluang',
-  start(el, s) {
-    let round = 0, wins = 0; const TOTAL = 10;
-    el.innerHTML = '<div class="panel center-col" style="max-width:380px;text-align:center"><div class="hud" style="width:100%">' + BG.hudPill('Benar', 'cn-wins') + '<div class="hud-pill">Lemparan <b id="cn-round">0</b>/' + TOTAL + '</div></div>' +
-      '<div id="cn-coin" style="width:130px;height:130px;border-radius:50%;background:radial-gradient(circle at 38% 35%,#ffe98a,#ffd23f 60%,#b45309);border:5px solid var(--ink);display:grid;place-items:center;font-size:3rem;font-weight:900;color:#7c4a03;margin:10px auto;transition:transform .4s">?</div>' +
-      '<div style="display:flex;gap:12px"><button class="btn btn-lime" id="cn-head" style="min-width:120px">Kepala</button><button class="btn btn-pink" id="cn-tail" style="min-width:120px">Ekor</button></div>' +
-      '<p id="cn-msg" style="min-height:1.4em;font-weight:800;color:#ffd23f"></p></div>';
-    const coinEl = el.querySelector('#cn-coin'), winsEl = el.querySelector('#cn-wins'), roundEl = el.querySelector('#cn-round'), msg = el.querySelector('#cn-msg');
-    function flip(guess) {
-      if (round >= TOTAL) return;
-      round++;
-      coinEl.style.transform = 'rotateY(720deg) scale(.6)';
-      s.timeout(() => {
-        coinEl.style.transform = 'rotateY(0) scale(1)';
-        const result = Math.random() < 0.5 ? 'head' : 'tail';
-        coinEl.textContent = result === 'head' ? 'K' : 'E';
-        const correct = guess === result;
-        if (correct) { wins++; winsEl.textContent = wins; BG.sfx('coin'); msg.textContent = 'Benar!'; } else { BG.sfx('bad'); msg.textContent = 'Meleset!'; }
-        roundEl.textContent = round;
-        if (round >= TOTAL) s.timeout(() => {
-          BG.endScreen(el.querySelector('.panel').parentElement, { score: wins * 10, bestKey: 'coin', title: 'Selesai!', sub: 'Tebakan benar ' + wins + ' dari ' + TOTAL + '.', scoreLabel: wins + '/' + TOTAL, onRetry: retry(el, s, 'coin') });
-        }, 600);
-      }, 380);
-    }
-    el.querySelector('#cn-head').addEventListener('click', () => flip('head'));
-    el.querySelector('#cn-tail').addEventListener('click', () => flip('tail'));
-  }
-});
 
 /* ============ 47. BUG CLICKER (idle) ============ */
 BG.register({

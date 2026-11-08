@@ -371,7 +371,7 @@ window.BG = (function () {
   function init() {
     document.getElementById('mascotHome').innerHTML = window.BG_MASCOT;
 
-    document.querySelectorAll('.rail button').forEach(b => b.addEventListener('click', () => go(b.dataset.tab)));
+    document.querySelectorAll('.ps-bottomnav button').forEach(b => b.addEventListener('click', () => go(b.dataset.tab)));
     document.querySelectorAll('[data-go]').forEach(elm => elm.addEventListener('click', () => go(elm.dataset.go)));
 
     document.getElementById('catChips').innerHTML = CATS.map(c =>

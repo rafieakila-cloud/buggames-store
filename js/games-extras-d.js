@@ -3,62 +3,6 @@
 
 function exRetry(el, s, id) { return () => { el.innerHTML = ''; BG.games.find(g => g.id === id).start(el, s); }; }
 
-/* ============ PACUAN KURA-KURA ============ */
-BG.register({
-  id: 'pacuankura', name: 'Pacuan Kura-Kura', desc: 'Bertaruh kura-kura mana yang menang!', cat: 'kuis', icon: 'turtle', tags: 'pacuan kura-kura balapan bet',
-  start(el, s) {
-    const TURTLES = [['🐢', 'Kuno', '#4ade80'], ['🐢', 'Kilau', '#facc15'], ['🐢', 'Racing', '#22d3ee'], ['🐢', 'Roket', '#fb7185']];
-    let coins = 100, round = 1; const MAX_ROUNDS = 5;
-    let pick = -1, racing = false, over = false;
-    el.innerHTML = '<div class="panel center-col" style="max-width:440px;text-align:center"><div class="hud" style="width:100%">' + BG.hudPill('Koin', 'pk2-coins') + '<div class="hud-pill">Balapan <b id="pk2-round">1</b>/' + MAX_ROUNDS + '</div></div>' +
-      '<div id="pk2-track" style="display:flex;flex-direction:column;gap:8px;width:100%;margin:6px 0"></div>' +
-      '<p id="pk2-msg" style="min-height:1.4em;font-weight:800;color:#ffd23f">Pilih kura-kura jagoanmu! (Taruhan 25 koin)</p>' +
-      '<div id="pk2-picks" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center"></div></div>';
-    const trackEl = el.querySelector('#pk2-track'), coinsEl = el.querySelector('#pk2-coins'), roundEl = el.querySelector('#pk2-round'), msgEl = el.querySelector('#pk2-msg'), picksEl = el.querySelector('#pk2-picks');
-    picksEl.innerHTML = TURTLES.map((t, i) => '<button class="btn btn-ghost" data-i="' + i + '" style="font-size:1.1rem">' + t[0] + ' ' + t[1] + '</button>').join('');
-
-    function drawTrack(positions, finished) {
-      trackEl.innerHTML = TURTLES.map((t, i) => {
-        const pos = Math.min(100, positions[i]);
-        return '<div style="display:flex;align-items:center;gap:8px"><span style="width:60px;font-size:.72rem;color:' + t[2] + ';font-weight:800">' + t[1] + '</span>' +
-          '<div style="flex:1;height:16px;background:#241239;border-radius:8px;position:relative;overflow:hidden"><div style="position:absolute;left:' + pos + '%;top:1px;font-size:13px;transform:translateX(-50%)">' + t[0] + '</div></div></div>';
-      }).join('');
-    }
-    function startRace() {
-      racing = true;
-      coins -= 25; coinsEl.textContent = coins;
-      const positions = [0, 0, 0, 0], speeds = [1, 1, 1, 1];
-      picksEl.style.pointerEvents = 'none';
-      let frame = 0;
-      const iv = s.interval(() => {
-        frame++;
-        for (let i = 0; i < 4; i++) { speeds[i] = 0.7 + Math.random() * 1.8; positions[i] += speeds[i]; }
-        drawTrack(positions, false);
-        const winner = positions.findIndex(p => p >= 100);
-        if (winner >= 0) {
-          clearInterval(iv);
-          const win = pick === winner;
-          if (win) { coins += 60; msgEl.textContent = 'Menang! +35 koin bersih!'; BG.sfx('win'); } else { msgEl.textContent = 'Kalah! ' + TURTLES[winner][1] + ' juaranya!'; BG.sfx('bad'); }
-          coinsEl.textContent = coins;
-          racing = false;
-          round++;
-          if (round > MAX_ROUNDS || coins <= 0) {
-            over = true;
-            BG.endScreen(el.querySelector('.panel').parentElement, { score: coins, bestKey: 'pacuankura', title: 'Balapan Selesai!', sub: 'Sisa koin: ' + coins, scoreLabel: coins + ' koin', onRetry: exRetry(el, s, 'pacuankura') });
-          } else { roundEl.textContent = Math.min(round, MAX_ROUNDS); pick = -1; picksEl.style.pointerEvents = 'auto'; msgEl.textContent = 'Pilih lagi! Taruhan 25 koin'; }
-        }
-      }, 90);
-    }
-    picksEl.addEventListener('click', e => {
-      const btn = e.target.closest('button'); if (!btn || racing || over) return;
-      pick = +btn.dataset.i; BG.sfx('click');
-      msgEl.textContent = 'Jagoan: ' + TURTLES[pick][1] + '! Balapan dimulai...';
-      startRace();
-    });
-    drawTrack([0, 0, 0, 0], false);
-    coinsEl.textContent = coins;
-  }
-});
 
 /* ============ KELERENG TEMBAK (pachinko) ============ */
 BG.register({
