@@ -1,7 +1,7 @@
 {
-  "name": "Klik Tercepat! — BUGGAMES",
-  "short_name": "Klik Tercep…",
-  "description": "Klik sebanyak-banyaknya dalam 5 detik! Mainkan offline, gratis.",
+  "name": "Klik Tercepat!",
+  "short_name": "Klik",
+  "description": "Klik sebanyak-banyaknya dalam 5 detik! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=cps",
   "start_url": "./play.html?game=cps",
   "scope": "./",

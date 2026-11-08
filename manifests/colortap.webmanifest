@@ -1,7 +1,7 @@
 {
-  "name": "Tap Warna! — BUGGAMES",
+  "name": "Tap Warna!",
   "short_name": "Tap Warna!",
-  "description": "Ketuk tombol sesuai WARNA yang disebut! Mainkan offline, gratis.",
+  "description": "Ketuk tombol sesuai WARNA yang disebut! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=colortap",
   "start_url": "./play.html?game=colortap",
   "scope": "./",

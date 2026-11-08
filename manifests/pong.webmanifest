@@ -1,7 +1,7 @@
 {
-  "name": "Pong Buggy — BUGGAMES",
+  "name": "Pong Buggy",
   "short_name": "Pong Buggy",
-  "description": "Duel tenis meja vs komputer. Duluan 7 menang! Mainkan offline, gratis.",
+  "description": "Duel tenis meja vs komputer. Duluan 7 menang! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=pong",
   "start_url": "./play.html?game=pong",
   "scope": "./",

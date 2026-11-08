@@ -1,7 +1,7 @@
 {
-  "name": "Bug Space Raid — BUGGAMES",
-  "short_name": "Bug Space R…",
-  "description": "Tembak alien kutu dari luar angkasa! Mainkan offline, gratis.",
+  "name": "Bug Space Raid",
+  "short_name": "Bug Space",
+  "description": "Tembak alien kutu dari luar angkasa! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=shooter",
   "start_url": "./play.html?game=shooter",
   "scope": "./",

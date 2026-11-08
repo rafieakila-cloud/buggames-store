@@ -1,7 +1,7 @@
 {
-  "name": "Tebak Kata — BUGGAMES",
+  "name": "Tebak Kata",
   "short_name": "Tebak Kata",
-  "description": "Tebak kata Indonesia sebelum Buggy tergantung! Mainkan offline, gratis.",
+  "description": "Tebak kata Indonesia sebelum Buggy tergantung! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=hangman",
   "start_url": "./play.html?game=hangman",
   "scope": "./",

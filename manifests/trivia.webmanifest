@@ -1,7 +1,7 @@
 {
-  "name": "Kuis Buggy — BUGGAMES",
+  "name": "Kuis Buggy",
   "short_name": "Kuis Buggy",
-  "description": "10 pertanyaan seru seputar bug & dunia! Mainkan offline, gratis.",
+  "description": "10 pertanyaan seru seputar bug & dunia! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=trivia",
   "start_url": "./play.html?game=trivia",
   "scope": "./",

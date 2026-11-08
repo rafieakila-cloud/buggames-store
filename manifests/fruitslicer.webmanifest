@@ -1,7 +1,7 @@
 {
-  "name": "Fruit Slicer — BUGGAMES",
+  "name": "Fruit Slicer",
   "short_name": "Fruit Slicer",
-  "description": "Tebas buah! Jangan tebas bom! Mainkan offline, gratis.",
+  "description": "Tebas buah! Jangan tebas bom! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=fruitslicer",
   "start_url": "./play.html?game=fruitslicer",
   "scope": "./",

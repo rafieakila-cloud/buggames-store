@@ -1,7 +1,7 @@
 {
-  "name": "Bom Waktu — BUGGAMES",
+  "name": "Bom Waktu",
   "short_name": "Bom Waktu",
-  "description": "Potong kabel yang benar sebelum meledak! Mainkan offline, gratis.",
+  "description": "Potong kabel yang benar sebelum meledak! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=bomwaktu",
   "start_url": "./play.html?game=bomwaktu",
   "scope": "./",

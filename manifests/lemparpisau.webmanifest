@@ -1,7 +1,7 @@
 {
-  "name": "Lempar Pisau — BUGGAMES",
+  "name": "Lempar Pisau",
   "short_name": "Lempar Pisau",
-  "description": "Lempar pisau ke balok berputar! Mainkan offline, gratis.",
+  "description": "Lempar pisau ke balok berputar! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=lemparpisau",
   "start_url": "./play.html?game=lemparpisau",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Selam Laut 3D — BUGGAMES",
-  "short_name": "Selam Laut …",
-  "description": "Selami dasar laut! Kumpulkan mutiara, hindari ubur-ubur. Mainkan offline, gratis.",
+  "name": "Selam Laut 3D",
+  "short_name": "Selam Laut",
+  "description": "Selami dasar laut! Kumpulkan mutiara, hindari ubur-ubur. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=sub3d",
   "start_url": "./play.html?game=sub3d",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Bug Clicker — BUGGAMES",
+  "name": "Bug Clicker",
   "short_name": "Bug Clicker",
-  "description": "Ketuk bug-nya, kumpulkan sebanyak-banyaknya! Mainkan offline, gratis.",
+  "description": "Ketuk bug-nya, kumpulkan sebanyak-banyaknya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=clicker",
   "start_url": "./play.html?game=clicker",
   "scope": "./",

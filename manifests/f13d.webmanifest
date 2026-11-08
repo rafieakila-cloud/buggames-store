@@ -1,7 +1,7 @@
 {
-  "name": "F1 Bug Grand Prix — BUGGAMES",
-  "short_name": "F1 Bug Gran…",
-  "description": "F1 Bug! Kursi rendah, sayap F1, 3 lap blazing! Mainkan offline, gratis.",
+  "name": "F1 Bug Grand Prix",
+  "short_name": "F1 Bug Grand",
+  "description": "F1 Bug! Kursi rendah, sayap F1, 3 lap blazing! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=f13d",
   "start_url": "./play.html?game=f13d",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Panco Bug — BUGGAMES",
+  "name": "Panco Bug",
   "short_name": "Panco Bug",
-  "description": "Adu kuat! Pencet secepat-cepatnya! Mainkan offline, gratis.",
+  "description": "Adu kuat! Pencet secepat-cepatnya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=pancobug",
   "start_url": "./play.html?game=pancobug",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Potong Kayu — BUGGAMES",
+  "name": "Potong Kayu",
   "short_name": "Potong Kayu",
-  "description": "Potong kayu tepat di garis hijau! Mainkan offline, gratis.",
+  "description": "Potong kayu tepat di garis hijau! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=potongkayu",
   "start_url": "./play.html?game=potongkayu",
   "scope": "./",

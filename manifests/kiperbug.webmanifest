@@ -1,7 +1,7 @@
 {
-  "name": "Kiper Bug — BUGGAMES",
+  "name": "Kiper Bug",
   "short_name": "Kiper Bug",
-  "description": "Selamatkan gawang 5 tendangan! Mainkan offline, gratis.",
+  "description": "Selamatkan gawang 5 tendangan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=kiperbug",
   "start_url": "./play.html?game=kiperbug",
   "scope": "./",

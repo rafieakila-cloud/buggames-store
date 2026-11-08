@@ -1,7 +1,7 @@
 {
-  "name": "Breakout Bug — BUGGAMES",
+  "name": "Breakout Bug",
   "short_name": "Breakout Bug",
-  "description": "Hancurkan semua bata dengan bola! Mainkan offline, gratis.",
+  "description": "Hancurkan semua bata dengan bola! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=breakout",
   "start_url": "./play.html?game=breakout",
   "scope": "./",

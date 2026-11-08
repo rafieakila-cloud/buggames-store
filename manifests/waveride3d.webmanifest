@@ -1,7 +1,7 @@
 {
-  "name": "Wave Rider 3D — BUGGAMES",
-  "short_name": "Wave Rider …",
-  "description": "Selancar di atas gelombang raksasa! Mainkan offline, gratis.",
+  "name": "Wave Rider 3D",
+  "short_name": "Wave Rider",
+  "description": "Selancar di atas gelombang raksasa! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=waveride3d",
   "start_url": "./play.html?game=waveride3d",
   "scope": "./",

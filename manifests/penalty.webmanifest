@@ -1,7 +1,7 @@
 {
-  "name": "Penalti Bug — BUGGAMES",
+  "name": "Penalti Bug",
   "short_name": "Penalti Bug",
-  "description": "5 tendangan penalti. Bobol gawangnya! Mainkan offline, gratis.",
+  "description": "5 tendangan penalti. Bobol gawangnya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=penalty",
   "start_url": "./play.html?game=penalty",
   "scope": "./",

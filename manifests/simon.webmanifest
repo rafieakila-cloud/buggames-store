@@ -1,7 +1,7 @@
 {
-  "name": "Simon Bug — BUGGAMES",
+  "name": "Simon Bug",
   "short_name": "Simon Bug",
-  "description": "Ulangi urutan warna yang dimainkan Buggy! Mainkan offline, gratis.",
+  "description": "Ulangi urutan warna yang dimainkan Buggy! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=simon",
   "start_url": "./play.html?game=simon",
   "scope": "./",

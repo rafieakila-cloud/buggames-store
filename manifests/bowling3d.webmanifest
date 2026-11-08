@@ -1,7 +1,7 @@
 {
-  "name": "Bowling 3D — BUGGAMES",
+  "name": "Bowling 3D",
   "short_name": "Bowling 3D",
-  "description": "Runtuhkan 10 pin! Bowling 3D sungguhan. Mainkan offline, gratis.",
+  "description": "Runtuhkan 10 pin! Bowling 3D sungguhan. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=bowling3d",
   "start_url": "./play.html?game=bowling3d",
   "scope": "./",

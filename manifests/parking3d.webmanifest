@@ -1,7 +1,7 @@
 {
-  "name": "Parking Mobil 3D — BUGGAMES",
-  "short_name": "Parking Mob…",
-  "description": "Parkir mobil ke slot glowing. 3 level makin sempit! Mainkan offline, gratis.",
+  "name": "Parking Mobil 3D",
+  "short_name": "Parking",
+  "description": "Parkir mobil ke slot glowing. 3 level makin sempit! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=parking3d",
   "start_url": "./play.html?game=parking3d",
   "scope": "./",

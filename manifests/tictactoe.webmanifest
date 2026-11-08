@@ -1,7 +1,7 @@
 {
-  "name": "Tiga Serangkai — BUGGAMES",
-  "short_name": "Tiga Serang…",
-  "description": "Halangi 3 di garis lurus vs komputer! Mainkan offline, gratis.",
+  "name": "Tiga Serangkai",
+  "short_name": "Tiga",
+  "description": "Halangi 3 di garis lurus vs komputer! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=tictactoe",
   "start_url": "./play.html?game=tictactoe",
   "scope": "./",

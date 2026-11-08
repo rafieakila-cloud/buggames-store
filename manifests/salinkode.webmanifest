@@ -1,7 +1,7 @@
 {
-  "name": "Salin Kode — BUGGAMES",
+  "name": "Salin Kode",
   "short_name": "Salin Kode",
-  "description": "Pecahkan PIN 4 digit tersembunyi! Mainkan offline, gratis.",
+  "description": "Pecahkan PIN 4 digit tersembunyi! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=salinkode",
   "start_url": "./play.html?game=salinkode",
   "scope": "./",

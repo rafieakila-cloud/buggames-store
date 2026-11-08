@@ -1,7 +1,7 @@
 {
-  "name": "Bom Bug — BUGGAMES",
+  "name": "Bom Bug",
   "short_name": "Bom Bug",
-  "description": "Buka semua kotak tanpa kena bom! Mainkan offline, gratis.",
+  "description": "Buka semua kotak tanpa kena bom! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=minesweeper",
   "start_url": "./play.html?game=minesweeper",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Tebak Melodi — BUGGAMES",
+  "name": "Tebak Melodi",
   "short_name": "Tebak Melodi",
-  "description": "Dengar nada, tebak judul lagu! Mainkan offline, gratis.",
+  "description": "Dengar nada, tebak judul lagu! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=tebakmelodi",
   "start_url": "./play.html?game=tebakmelodi",
   "scope": "./",

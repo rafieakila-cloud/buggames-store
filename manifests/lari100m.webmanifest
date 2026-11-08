@@ -1,7 +1,7 @@
 {
-  "name": "Lari 100m Bug — BUGGAMES",
-  "short_name": "Lari 100m B…",
-  "description": "Pencet secepat-cepatnya lawan 3 bug! Mainkan offline, gratis.",
+  "name": "Lari 100m Bug",
+  "short_name": "Lari 100m",
+  "description": "Pencet secepat-cepatnya lawan 3 bug! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=lari100m",
   "start_url": "./play.html?game=lari100m",
   "scope": "./",

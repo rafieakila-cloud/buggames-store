@@ -1,7 +1,7 @@
 {
-  "name": "Ular Bug — BUGGAMES",
+  "name": "Ular Bug",
   "short_name": "Ular Bug",
-  "description": "Makan bug sebanyak mungkin, jangan nabrak! Mainkan offline, gratis.",
+  "description": "Makan bug sebanyak mungkin, jangan nabrak! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=snake",
   "start_url": "./play.html?game=snake",
   "scope": "./",

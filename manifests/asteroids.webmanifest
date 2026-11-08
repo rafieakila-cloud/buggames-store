@@ -1,7 +1,7 @@
 {
-  "name": "Asteroid Bug — BUGGAMES",
+  "name": "Asteroid Bug",
   "short_name": "Asteroid Bug",
-  "description": "Hancurkan asteroid, jangan sampai kena! Mainkan offline, gratis.",
+  "description": "Hancurkan asteroid, jangan sampai kena! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=asteroids",
   "start_url": "./play.html?game=asteroids",
   "scope": "./",

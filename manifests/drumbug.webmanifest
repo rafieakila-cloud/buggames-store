@@ -1,7 +1,7 @@
 {
-  "name": "Drum Bug — BUGGAMES",
+  "name": "Drum Bug",
   "short_name": "Drum Bug",
-  "description": "Tirukan ritme drum! Mainkan offline, gratis.",
+  "description": "Tirukan ritme drum! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=drumbug",
   "start_url": "./play.html?game=drumbug",
   "scope": "./",

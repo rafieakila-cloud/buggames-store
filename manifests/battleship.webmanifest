@@ -1,7 +1,7 @@
 {
-  "name": "Kapal Bug — BUGGAMES",
+  "name": "Kapal Bug",
   "short_name": "Kapal Bug",
-  "description": "Tenggelamkan kapal komputer duluan! Mainkan offline, gratis.",
+  "description": "Tenggelamkan kapal komputer duluan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=battleship",
   "start_url": "./play.html?game=battleship",
   "scope": "./",

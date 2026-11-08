@@ -1,7 +1,7 @@
 {
-  "name": "Ski 3D — BUGGAMES",
+  "name": "Ski 3D",
   "short_name": "Ski 3D",
-  "description": "Slalom salju! Tiang gate dari salju! Mainkan offline, gratis.",
+  "description": "Slalom salju! Tiang gate dari salju! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=ski3d",
   "start_url": "./play.html?game=ski3d",
   "scope": "./",

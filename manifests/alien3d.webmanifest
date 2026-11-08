@@ -1,7 +1,7 @@
 {
-  "name": "Alien Blaster 3D — BUGGAMES",
-  "short_name": "Alien Blast…",
-  "description": "Tembak alien dari kejauhan! Mainkan offline, gratis.",
+  "name": "Alien Blaster 3D",
+  "short_name": "Alien",
+  "description": "Tembak alien dari kejauhan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=alien3d",
   "start_url": "./play.html?game=alien3d",
   "scope": "./",

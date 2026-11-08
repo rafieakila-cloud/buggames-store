@@ -1,7 +1,7 @@
 {
-  "name": "Terjun Bebas 3D — BUGGAMES",
-  "short_name": "Terjun Beba…",
-  "description": "Lompat dari pesawat, tembus cincin sampai daratan! Mainkan offline, gratis.",
+  "name": "Terjun Bebas 3D",
+  "short_name": "Terjun Bebas",
+  "description": "Lompat dari pesawat, tembus cincin sampai daratan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=skydive3d",
   "start_url": "./play.html?game=skydive3d",
   "scope": "./",

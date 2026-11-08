@@ -1,7 +1,7 @@
 {
-  "name": "Labyrinth 3D — BUGGAMES",
+  "name": "Labyrinth 3D",
   "short_name": "Labyrinth 3D",
-  "description": "Kabur dari labirin 3D! Temukan jalan keluar. Mainkan offline, gratis.",
+  "description": "Kabur dari labirin 3D! Temukan jalan keluar. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=labyrinth3d",
   "start_url": "./play.html?game=labyrinth3d",
   "scope": "./",

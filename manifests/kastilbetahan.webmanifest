@@ -1,7 +1,7 @@
 {
-  "name": "Kastil Bertahan — BUGGAMES",
-  "short_name": "Kastil Bert…",
-  "description": "Jaga kastil dari gempuran bug! Mainkan offline, gratis.",
+  "name": "Kastil Bertahan",
+  "short_name": "Kastil",
+  "description": "Jaga kastil dari gempuran bug! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=kastilbetahan",
   "start_url": "./play.html?game=kastilbetahan",
   "scope": "./",

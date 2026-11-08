@@ -1,7 +1,7 @@
 {
-  "name": "Matador Bug — BUGGAMES",
+  "name": "Matador Bug",
   "short_name": "Matador Bug",
-  "description": "Kembung si banteng! Elus di saat yang tepat! Mainkan offline, gratis.",
+  "description": "Kembung si banteng! Elus di saat yang tepat! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=matadorbug",
   "start_url": "./play.html?game=matadorbug",
   "scope": "./",

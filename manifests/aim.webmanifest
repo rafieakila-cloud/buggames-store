@@ -1,7 +1,7 @@
 {
-  "name": "Latih Bidik — BUGGAMES",
+  "name": "Latih Bidik",
   "short_name": "Latih Bidik",
-  "description": "Ketuk target yang muncul secepatnya! Mainkan offline, gratis.",
+  "description": "Ketuk target yang muncul secepatnya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=aim",
   "start_url": "./play.html?game=aim",
   "scope": "./",

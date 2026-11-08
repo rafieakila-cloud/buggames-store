@@ -1,7 +1,7 @@
 {
-  "name": "Kelereng Tembak — BUGGAMES",
-  "short_name": "Kelereng Te…",
-  "description": "Jatuhkan kelereng ke wadah skor! Mainkan offline, gratis.",
+  "name": "Kelereng Tembak",
+  "short_name": "Kelereng",
+  "description": "Jatuhkan kelereng ke wadah skor! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=kelereng",
   "start_url": "./play.html?game=kelereng",
   "scope": "./",

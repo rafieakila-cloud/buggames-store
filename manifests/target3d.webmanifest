@@ -1,7 +1,7 @@
 {
-  "name": "Target 3D — BUGGAMES",
+  "name": "Target 3D",
   "short_name": "Target 3D",
-  "description": "Tembak target dari jauh! Makin jauh makin mahal. Mainkan offline, gratis.",
+  "description": "Tembak target dari jauh! Makin jauh makin mahal. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=target3d",
   "start_url": "./play.html?game=target3d",
   "scope": "./",

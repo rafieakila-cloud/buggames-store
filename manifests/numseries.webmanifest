@@ -1,7 +1,7 @@
 {
-  "name": "Deret Angka — BUGGAMES",
+  "name": "Deret Angka",
   "short_name": "Deret Angka",
-  "description": "Angka berikutnya... berapa? Mainkan offline, gratis.",
+  "description": "Angka berikutnya... berapa? Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=numseries",
   "start_url": "./play.html?game=numseries",
   "scope": "./",

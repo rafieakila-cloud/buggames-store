@@ -1,7 +1,7 @@
 {
-  "name": "Sumo Bug 3D — BUGGAMES",
+  "name": "Sumo Bug 3D",
   "short_name": "Sumo Bug 3D",
-  "description": "Dorong bug lawan keluar dari arena! Mainkan offline, gratis.",
+  "description": "Dorong bug lawan keluar dari arena! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=sumo3d",
   "start_url": "./play.html?game=sumo3d",
   "scope": "./",

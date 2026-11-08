@@ -1,12 +1,22 @@
 const fs = require('fs');
 const games = JSON.parse(fs.readFileSync('tools/catalog.json', 'utf8'));
 fs.mkdirSync('manifests', { recursive: true });
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function shorten(name, max) {
+  if (name.length <= max) return name;
+  const words = name.split(/\s+/);
+  let out = '';
+  for (const w of words) {
+    if ((out + ' ' + w).trim().length <= max) out = (out + ' ' + w).trim();
+    else break;
+  }
+  if (out.length === 0) out = name.slice(0, max);
+  return out;
+}
 for (const g of games) {
   const m = {
-    name: g.name + ' — BUGGAMES',
-    short_name: g.name.length > 12 ? g.name.slice(0, 11) + '…' : g.name,
-    description: (g.desc || 'Game seru offline BUGGAMES!') + ' Mainkan offline, gratis.',
+    name: g.name,
+    short_name: shorten(g.name, 12),
+    description: (g.desc || 'Game seru BUGGAMES!') + ' Gratis, offline, tanpa iklan.',
     id: './play.html?game=' + g.id,
     start_url: './play.html?game=' + g.id,
     scope: './',
@@ -24,4 +34,4 @@ for (const g of games) {
   };
   fs.writeFileSync('manifests/' + g.id + '.webmanifest', JSON.stringify(m, null, 2));
 }
-console.log('manifests:', fs.readdirSync('manifests').length);
+console.log('manifests regenerated:', fs.readdirSync('manifests').length);

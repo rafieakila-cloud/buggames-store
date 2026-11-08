@@ -1,7 +1,7 @@
 {
-  "name": "Reversi 6x6 — BUGGAMES",
+  "name": "Reversi 6x6",
   "short_name": "Reversi 6x6",
-  "description": "Klaim wilayah! Lawan Buggy. Mainkan offline, gratis.",
+  "description": "Klaim wilayah! Lawan Buggy. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=reversi",
   "start_url": "./play.html?game=reversi",
   "scope": "./",

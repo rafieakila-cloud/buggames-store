@@ -1,7 +1,7 @@
 {
-  "name": "Lintas Jalan — BUGGAMES",
+  "name": "Lintas Jalan",
   "short_name": "Lintas Jalan",
-  "description": "Antar bug ke taman bunga! Awas mobil. Mainkan offline, gratis.",
+  "description": "Antar bug ke taman bunga! Awas mobil. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=frogger",
   "start_url": "./play.html?game=frogger",
   "scope": "./",

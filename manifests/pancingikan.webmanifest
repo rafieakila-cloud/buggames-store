@@ -1,7 +1,7 @@
 {
-  "name": "Pancing Ikan — BUGGAMES",
+  "name": "Pancing Ikan",
   "short_name": "Pancing Ikan",
-  "description": "Kait ikan dengan timing sempurna! Mainkan offline, gratis.",
+  "description": "Kait ikan dengan timing sempurna! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=pancingikan",
   "start_url": "./play.html?game=pancingikan",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Samber Petir — BUGGAMES",
+  "name": "Samber Petir",
   "short_name": "Samber Petir",
-  "description": "Sambar petir secepat kilat! Mainkan offline, gratis.",
+  "description": "Sambar petir secepat kilat! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=samberpetir",
   "start_url": "./play.html?game=samberpetir",
   "scope": "./",

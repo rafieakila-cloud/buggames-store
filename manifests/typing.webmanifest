@@ -1,7 +1,7 @@
 {
-  "name": "Uji Ketik — BUGGAMES",
+  "name": "Uji Ketik",
   "short_name": "Uji Ketik",
-  "description": "Seberapa cepat kamu mengetik? 45 detik! Mainkan offline, gratis.",
+  "description": "Seberapa cepat kamu mengetik? 45 detik! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=typing",
   "start_url": "./play.html?game=typing",
   "scope": "./",

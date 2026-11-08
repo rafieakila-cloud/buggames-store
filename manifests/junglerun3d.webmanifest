@@ -1,7 +1,7 @@
 {
-  "name": "Jungle Run 3D — BUGGAMES",
-  "short_name": "Jungle Run …",
-  "description": "Lari di jalur hutan! Lompat kayu, hindari batu. Mainkan offline, gratis.",
+  "name": "Jungle Run 3D",
+  "short_name": "Jungle Run",
+  "description": "Lari di jalur hutan! Lompat kayu, hindari batu. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=junglerun3d",
   "start_url": "./play.html?game=junglerun3d",
   "scope": "./",

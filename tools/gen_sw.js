@@ -3,14 +3,14 @@ const catalog = JSON.parse(fs.readFileSync('tools/catalog.json', 'utf8'));
 const covers = catalog.map(g => "  './icons/covers/" + g.id + ".png',").join('\n');
 const appIcons = catalog.map(g => "  './icons/apps/" + g.id + "-192.png', './icons/apps/" + g.id + "-512.png',").join('\n');
 const manifests = catalog.map(g => "  './manifests/" + g.id + ".webmanifest',").join('\n');
-const sw = `const C = 'buggames-store-v16';
+const sw = `const C = 'buggames-store-v17';
 const ASSETS = [
   './', './index.html', './play.html',
-  './css/style.css?v=16', './css/playstore.css?v=16', './css/play.css?v=16',
-  './js/app.js?v=16', './js/play.js?v=16', './js/icons.js?v=16', './js/engine3d.js?v=16',
-  './js/games-action.js?v=16', './js/games-board.js?v=16', './js/games-quiz.js?v=16',
-  './js/games-extras.js?v=16', './js/games-extras-b.js?v=16', './js/games-extras-c.js?v=16',
-  './js/games-extras-d.js?v=16', './js/games-extras-e.js?v=16', './js/games-3d.js?v=16', './js/games-3d-extra.js?v=16', './js/games-3d-extra-b.js?v=16',
+  './css/style.css?v=17', './css/playstore.css?v=17', './css/play.css?v=17',
+  './js/app.js?v=17', './js/play.js?v=17', './js/icons.js?v=17', './js/engine3d.js?v=17',
+  './js/games-action.js?v=17', './js/games-board.js?v=17', './js/games-quiz.js?v=17',
+  './js/games-extras.js?v=17', './js/games-extras-b.js?v=17', './js/games-extras-c.js?v=17',
+  './js/games-extras-d.js?v=17', './js/games-extras-e.js?v=17', './js/games-3d.js?v=17', './js/games-3d-extra.js?v=17', './js/games-3d-extra-b.js?v=17',
   './manifest.webmanifest',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png', './icons/apple-touch-icon.png', './icons/qr-install.png', './icons/qr-store.png',
 ${covers}

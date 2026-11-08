@@ -1,7 +1,7 @@
 {
-  "name": "Tebak Harga — BUGGAMES",
+  "name": "Tebak Harga",
   "short_name": "Tebak Harga",
-  "description": "Kira-kira berapa harganya? Mainkan offline, gratis.",
+  "description": "Kira-kira berapa harganya? Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=tebakharga",
   "start_url": "./play.html?game=tebakharga",
   "scope": "./",

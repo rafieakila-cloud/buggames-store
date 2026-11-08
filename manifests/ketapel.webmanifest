@@ -1,7 +1,7 @@
 {
-  "name": "Ketapel Bug — BUGGAMES",
+  "name": "Ketapel Bug",
   "short_name": "Ketapel Bug",
-  "description": "Tembak tumpukan kotak! Mainkan offline, gratis.",
+  "description": "Tembak tumpukan kotak! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=ketapel",
   "start_url": "./play.html?game=ketapel",
   "scope": "./",

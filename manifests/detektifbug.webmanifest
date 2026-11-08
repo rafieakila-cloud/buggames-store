@@ -1,7 +1,7 @@
 {
-  "name": "Detektif Bug — BUGGAMES",
+  "name": "Detektif Bug",
   "short_name": "Detektif Bug",
-  "description": "Cari bug maling keju! Mainkan offline, gratis.",
+  "description": "Cari bug maling keju! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=detektifbug",
   "start_url": "./play.html?game=detektifbug",
   "scope": "./",

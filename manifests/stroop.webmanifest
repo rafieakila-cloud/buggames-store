@@ -1,7 +1,7 @@
 {
-  "name": "Warna vs Kata — BUGGAMES",
-  "short_name": "Warna vs Ka…",
-  "description": "Sebut WARNA TULISANNYA, bukan katanya! Mainkan offline, gratis.",
+  "name": "Warna vs Kata",
+  "short_name": "Warna vs",
+  "description": "Sebut WARNA TULISANNYA, bukan katanya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=stroop",
   "start_url": "./play.html?game=stroop",
   "scope": "./",

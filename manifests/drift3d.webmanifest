@@ -1,7 +1,7 @@
 {
-  "name": "Drifting Mobil 3D — BUGGAMES",
-  "short_name": "Drifting Mo…",
-  "description": "Drift di tikungan, kejar poin sebanyak-banyaknya! Mainkan offline, gratis.",
+  "name": "Drifting Mobil 3D",
+  "short_name": "Drifting",
+  "description": "Drift di tikungan, kejar poin sebanyak-banyaknya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=drift3d",
   "start_url": "./play.html?game=drift3d",
   "scope": "./",

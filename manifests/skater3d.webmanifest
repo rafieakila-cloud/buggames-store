@@ -1,7 +1,7 @@
 {
-  "name": "Skater 3D — BUGGAMES",
+  "name": "Skater 3D",
   "short_name": "Skater 3D",
-  "description": "Hujan malam di kota! Kumpulkan bintang koin! Mainkan offline, gratis.",
+  "description": "Hujan malam di kota! Kumpulkan bintang koin! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=skater3d",
   "start_url": "./play.html?game=skater3d",
   "scope": "./",

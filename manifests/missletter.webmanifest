@@ -1,7 +1,7 @@
 {
-  "name": "Huruf Hilang — BUGGAMES",
+  "name": "Huruf Hilang",
   "short_name": "Huruf Hilang",
-  "description": "Isi huruf yang hilang dari kata! Mainkan offline, gratis.",
+  "description": "Isi huruf yang hilang dari kata! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=missletter",
   "start_url": "./play.html?game=missletter",
   "scope": "./",

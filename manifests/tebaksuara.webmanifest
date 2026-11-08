@@ -1,7 +1,7 @@
 {
-  "name": "Tebak Suara Hewan — BUGGAMES",
-  "short_name": "Tebak Suara…",
-  "description": "Dengar, tebak hewan apa! Mainkan offline, gratis.",
+  "name": "Tebak Suara Hewan",
+  "short_name": "Tebak Suara",
+  "description": "Dengar, tebak hewan apa! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=tebaksuara",
   "start_url": "./play.html?game=tebaksuara",
   "scope": "./",

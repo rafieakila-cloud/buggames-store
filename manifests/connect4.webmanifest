@@ -1,7 +1,7 @@
 {
-  "name": "Sambung Empat — BUGGAMES",
-  "short_name": "Sambung Emp…",
-  "description": "Susun 4 koin bug sejajar! Mainkan offline, gratis.",
+  "name": "Sambung Empat",
+  "short_name": "Sambung",
+  "description": "Susun 4 koin bug sejajar! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=connect4",
   "start_url": "./play.html?game=connect4",
   "scope": "./",

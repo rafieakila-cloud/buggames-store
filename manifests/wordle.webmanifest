@@ -1,7 +1,7 @@
 {
-  "name": "Tebak Kata — BUGGAMES",
+  "name": "Tebak Kata",
   "short_name": "Tebak Kata",
-  "description": "Tebak kata Indonesia 5 huruf dalam 6 tebakan! Mainkan offline, gratis.",
+  "description": "Tebak kata Indonesia 5 huruf dalam 6 tebakan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=wordle",
   "start_url": "./play.html?game=wordle",
   "scope": "./",

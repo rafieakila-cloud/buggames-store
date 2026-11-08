@@ -1,7 +1,7 @@
 {
-  "name": "Cari yang Beda — BUGGAMES",
-  "short_name": "Cari yang B…",
-  "description": "Satu bug beda sendiri. Mana dia? Mainkan offline, gratis.",
+  "name": "Cari yang Beda",
+  "short_name": "Cari yang",
+  "description": "Satu bug beda sendiri. Mana dia? Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=oddoneout",
   "start_url": "./play.html?game=oddoneout",
   "scope": "./",

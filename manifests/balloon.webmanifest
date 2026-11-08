@@ -1,7 +1,7 @@
 {
-  "name": "Balon Pop — BUGGAMES",
+  "name": "Balon Pop",
   "short_name": "Balon Pop",
-  "description": "Letuskan balon yang naik ke langit! Mainkan offline, gratis.",
+  "description": "Letuskan balon yang naik ke langit! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=balloon",
   "start_url": "./play.html?game=balloon",
   "scope": "./",

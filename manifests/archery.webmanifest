@@ -1,7 +1,7 @@
 {
-  "name": "Panahan Bug — BUGGAMES",
+  "name": "Panahan Bug",
   "short_name": "Panahan Bug",
-  "description": "Bidik tepat di tengah papan target! 5 anak panah. Mainkan offline, gratis.",
+  "description": "Bidik tepat di tengah papan target! 5 anak panah. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=archery",
   "start_url": "./play.html?game=archery",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Stack Tower — BUGGAMES",
+  "name": "Stack Tower",
   "short_name": "Stack Tower",
-  "description": "Susun balok setinggi mungkin. Timing adalah segalanya! Mainkan offline, gratis.",
+  "description": "Susun balok setinggi mungkin. Timing adalah segalanya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=stack",
   "start_url": "./play.html?game=stack",
   "scope": "./",

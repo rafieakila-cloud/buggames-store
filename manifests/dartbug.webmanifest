@@ -1,7 +1,7 @@
 {
-  "name": "Dart Bug — BUGGAMES",
+  "name": "Dart Bug",
   "short_name": "Dart Bug",
-  "description": "Lempar panah ke papan! Mainkan offline, gratis.",
+  "description": "Lempar panah ke papan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=dartbug",
   "start_url": "./play.html?game=dartbug",
   "scope": "./",

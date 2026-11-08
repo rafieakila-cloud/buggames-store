@@ -1,7 +1,7 @@
 {
-  "name": "Angka Terbesar — BUGGAMES",
-  "short_name": "Angka Terbe…",
-  "description": "Ketuk angka yang PALING BESAR! Mainkan offline, gratis.",
+  "name": "Angka Terbesar",
+  "short_name": "Angka",
+  "description": "Ketuk angka yang PALING BESAR! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=compare",
   "start_url": "./play.html?game=compare",
   "scope": "./",

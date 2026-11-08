@@ -1,7 +1,7 @@
 {
-  "name": "Mini Golf 3D — BUGGAMES",
+  "name": "Mini Golf 3D",
   "short_name": "Mini Golf 3D",
-  "description": "Pukul bola ke lubang! 3 hole makin susah. Mainkan offline, gratis.",
+  "description": "Pukul bola ke lubang! 3 hole makin susah. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=golf3d",
   "start_url": "./play.html?game=golf3d",
   "scope": "./",

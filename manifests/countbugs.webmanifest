@@ -1,7 +1,7 @@
 {
-  "name": "Hitung Bug — BUGGAMES",
+  "name": "Hitung Bug",
   "short_name": "Hitung Bug",
-  "description": "Bug-nya ngumpet sebentar, hitung cepat! Mainkan offline, gratis.",
+  "description": "Bug-nya ngumpet sebentar, hitung cepat! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=countbugs",
   "start_url": "./play.html?game=countbugs",
   "scope": "./",

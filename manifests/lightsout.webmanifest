@@ -1,7 +1,7 @@
 {
-  "name": "Lights Out — BUGGAMES",
+  "name": "Lights Out",
   "short_name": "Lights Out",
-  "description": "Matikan semua lampu! Mainkan offline, gratis.",
+  "description": "Matikan semua lampu! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=lightsout",
   "start_url": "./play.html?game=lightsout",
   "scope": "./",

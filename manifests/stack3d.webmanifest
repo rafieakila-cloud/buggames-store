@@ -1,7 +1,7 @@
 {
-  "name": "Stack 3D — BUGGAMES",
+  "name": "Stack 3D",
   "short_name": "Stack 3D",
-  "description": "Susun balok 3D setinggi mungkin di atas awan! Mainkan offline, gratis.",
+  "description": "Susun balok 3D setinggi mungkin di atas awan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=stack3d",
   "start_url": "./play.html?game=stack3d",
   "scope": "./",

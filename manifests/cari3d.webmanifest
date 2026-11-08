@@ -1,7 +1,7 @@
 {
-  "name": "Cari Barang 3D — BUGGAMES",
-  "short_name": "Cari Barang…",
-  "description": "Barang apa yang hilang di kamar 3D? Temukan! Mainkan offline, gratis.",
+  "name": "Cari Barang 3D",
+  "short_name": "Cari Barang",
+  "description": "Barang apa yang hilang di kamar 3D? Temukan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=cari3d",
   "start_url": "./play.html?game=cari3d",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Jetpack 3D — BUGGAMES",
+  "name": "Jetpack 3D",
   "short_name": "Jetpack 3D",
-  "description": "Terbang dengan jetpack! Tembus cincin di langit! Mainkan offline, gratis.",
+  "description": "Terbang dengan jetpack! Tembus cincin di langit! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=jetpack3d",
   "start_url": "./play.html?game=jetpack3d",
   "scope": "./",

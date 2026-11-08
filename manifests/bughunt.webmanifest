@@ -1,7 +1,7 @@
 {
-  "name": "Cari Bug! — BUGGAMES",
+  "name": "Cari Bug!",
   "short_name": "Cari Bug!",
-  "description": "Seekor bug sembunyi di antara bunga. Temukan! Mainkan offline, gratis.",
+  "description": "Seekor bug sembunyi di antara bunga. Temukan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=bughunt",
   "start_url": "./play.html?game=bughunt",
   "scope": "./",

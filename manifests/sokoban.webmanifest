@@ -1,7 +1,7 @@
 {
-  "name": "Sokoban — BUGGAMES",
+  "name": "Sokoban",
   "short_name": "Sokoban",
-  "description": "Dorong kotak ke target! Mainkan offline, gratis.",
+  "description": "Dorong kotak ke target! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=sokoban",
   "start_url": "./play.html?game=sokoban",
   "scope": "./",

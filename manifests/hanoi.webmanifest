@@ -1,7 +1,7 @@
 {
-  "name": "Menara Hanoi — BUGGAMES",
+  "name": "Menara Hanoi",
   "short_name": "Menara Hanoi",
-  "description": "Pindahkan 4 cakram ke tiang kanan! Mainkan offline, gratis.",
+  "description": "Pindahkan 4 cakram ke tiang kanan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=hanoi",
   "start_url": "./play.html?game=hanoi",
   "scope": "./",

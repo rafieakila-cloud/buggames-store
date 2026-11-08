@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const installedKey = 'buggames.installed-apps';
   function getInstalled() { try { return JSON.parse(localStorage.getItem(installedKey)) || []; } catch (e) { return []; } }
   function markInstalled(id) { const arr = getInstalled(); if (!arr.includes(id)) { arr.push(id); localStorage.setItem(installedKey, JSON.stringify(arr)); } }
-  const isInstalled = () => getInstalled().includes(g.id) || window.matchMedia('(display-mode: standalone)').matches;
+  const isInstalled = () => getInstalled().includes(g.id);
 
   function refreshInstallUI() {
     if (isInstalled()) {

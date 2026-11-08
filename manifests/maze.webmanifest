@@ -1,7 +1,7 @@
 {
-  "name": "Labirin Bug — BUGGAMES",
+  "name": "Labirin Bug",
   "short_name": "Labirin Bug",
-  "description": "Antar Buggy ke taman bunga di ujung labirin! Mainkan offline, gratis.",
+  "description": "Antar Buggy ke taman bunga di ujung labirin! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=maze",
   "start_url": "./play.html?game=maze",
   "scope": "./",

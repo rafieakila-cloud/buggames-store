@@ -1,7 +1,7 @@
 {
-  "name": "Tebak Angka — BUGGAMES",
+  "name": "Tebak Angka",
   "short_name": "Tebak Angka",
-  "description": "Aku mikir angka 1-100. 7 kesempatan! Mainkan offline, gratis.",
+  "description": "Aku mikir angka 1-100. 7 kesempatan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=numberguess",
   "start_url": "./play.html?game=numberguess",
   "scope": "./",

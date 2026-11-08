@@ -1,7 +1,7 @@
 {
-  "name": "Tangkap Bug — BUGGAMES",
+  "name": "Tangkap Bug",
   "short_name": "Tangkap Bug",
-  "description": "Tangkap bug merah, hindari kutu busuk! Mainkan offline, gratis.",
+  "description": "Tangkap bug merah, hindari kutu busuk! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=catch",
   "start_url": "./play.html?game=catch",
   "scope": "./",

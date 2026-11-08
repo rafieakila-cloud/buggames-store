@@ -1,7 +1,7 @@
 {
-  "name": "Mastermind — BUGGAMES",
+  "name": "Mastermind",
   "short_name": "Mastermind",
-  "description": "Tebak kode 4 warna! Mainkan offline, gratis.",
+  "description": "Tebak kode 4 warna! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=mastermind",
   "start_url": "./play.html?game=mastermind",
   "scope": "./",

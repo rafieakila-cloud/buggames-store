@@ -1,7 +1,7 @@
 {
-  "name": "Lari Bug! — BUGGAMES",
+  "name": "Lari Bug!",
   "short_name": "Lari Bug!",
-  "description": "Lompat kaktus, lari sejauh-jauhnya! Mainkan offline, gratis.",
+  "description": "Lompat kaktus, lari sejauh-jauhnya! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=dino",
   "start_url": "./play.html?game=dino",
   "scope": "./",

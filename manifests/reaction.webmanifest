@@ -1,7 +1,7 @@
 {
-  "name": "Refleks Bug — BUGGAMES",
+  "name": "Refleks Bug",
   "short_name": "Refleks Bug",
-  "description": "Ketuk secepatnya saat layar hijau! Mainkan offline, gratis.",
+  "description": "Ketuk secepatnya saat layar hijau! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=reaction",
   "start_url": "./play.html?game=reaction",
   "scope": "./",

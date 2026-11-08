@@ -1,7 +1,7 @@
 {
-  "name": "Katak Lompat — BUGGAMES",
+  "name": "Katak Lompat",
   "short_name": "Katak Lompat",
-  "description": "Lompat dari daun ke daun! Mainkan offline, gratis.",
+  "description": "Lompat dari daun ke daun! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=kataklompat",
   "start_url": "./play.html?game=kataklompat",
   "scope": "./",

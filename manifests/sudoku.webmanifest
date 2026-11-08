@@ -1,7 +1,7 @@
 {
-  "name": "Sudoku Mini — BUGGAMES",
+  "name": "Sudoku Mini",
   "short_name": "Sudoku Mini",
-  "description": "Isi angka 1-4. Tiap baris, kolom, kotak harus unik! Mainkan offline, gratis.",
+  "description": "Isi angka 1-4. Tiap baris, kolom, kotak harus unik! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=sudoku",
   "start_url": "./play.html?game=sudoku",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Math Sprint — BUGGAMES",
+  "name": "Math Sprint",
   "short_name": "Math Sprint",
-  "description": "60 detik, jawab matematika sebanyak mungkin! Mainkan offline, gratis.",
+  "description": "60 detik, jawab matematika sebanyak mungkin! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=mathsprint",
   "start_url": "./play.html?game=mathsprint",
   "scope": "./",

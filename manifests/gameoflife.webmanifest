@@ -1,7 +1,7 @@
 {
-  "name": "Kehidupan Bug — BUGGAMES",
-  "short_name": "Kehidupan B…",
-  "description": "Simulasi koloni bug: lahir, hidup, punah! Mainkan offline, gratis.",
+  "name": "Kehidupan Bug",
+  "short_name": "Kehidupan",
+  "description": "Simulasi koloni bug: lahir, hidup, punah! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=gameoflife",
   "start_url": "./play.html?game=gameoflife",
   "scope": "./",

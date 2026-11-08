@@ -1,7 +1,7 @@
 {
-  "name": "Flappy Bug — BUGGAMES",
+  "name": "Flappy Bug",
   "short_name": "Flappy Bug",
-  "description": "Kepakan sayap, hindari pipa! Mainkan offline, gratis.",
+  "description": "Kepakan sayap, hindari pipa! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=flappy",
   "start_url": "./play.html?game=flappy",
   "scope": "./",

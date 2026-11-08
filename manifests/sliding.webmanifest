@@ -1,7 +1,7 @@
 {
-  "name": "Geser Angka — BUGGAMES",
+  "name": "Geser Angka",
   "short_name": "Geser Angka",
-  "description": "Susun angka 1-15 berurutan! Mainkan offline, gratis.",
+  "description": "Susun angka 1-15 berurutan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=sliding",
   "start_url": "./play.html?game=sliding",
   "scope": "./",

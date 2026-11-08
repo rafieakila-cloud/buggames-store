@@ -1,7 +1,7 @@
 {
-  "name": "Batu Gunting Kertas — BUGGAMES",
-  "short_name": "Batu Guntin…",
-  "description": "5 ronde melawan Buggy. Mana yang menang? Mainkan offline, gratis.",
+  "name": "Batu Gunting Kertas",
+  "short_name": "Batu Gunting",
+  "description": "5 ronde melawan Buggy. Mana yang menang? Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=rps",
   "start_url": "./play.html?game=rps",
   "scope": "./",

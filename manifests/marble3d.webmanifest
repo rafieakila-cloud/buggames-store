@@ -1,7 +1,7 @@
 {
-  "name": "Kelereng Rush 3D — BUGGAMES",
-  "short_name": "Kelereng Ru…",
-  "description": "Kelereng menggelinding lintasan 3D! Hindari rintangan! Mainkan offline, gratis.",
+  "name": "Kelereng Rush 3D",
+  "short_name": "Kelereng",
+  "description": "Kelereng menggelinding lintasan 3D! Hindari rintangan! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=marble3d",
   "start_url": "./play.html?game=marble3d",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Bug Dodge — BUGGAMES",
+  "name": "Bug Dodge",
   "short_name": "Bug Dodge",
-  "description": "Hindari semprotan pestisida! Bertahanlah. Mainkan offline, gratis.",
+  "description": "Hindari semprotan pestisida! Bertahanlah. Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=dodge",
   "start_url": "./play.html?game=dodge",
   "scope": "./",

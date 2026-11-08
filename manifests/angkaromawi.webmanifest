@@ -1,7 +1,7 @@
 {
-  "name": "Angka Romawi — BUGGAMES",
+  "name": "Angka Romawi",
   "short_name": "Angka Romawi",
-  "description": "Siapa jago angka romawi? Mainkan offline, gratis.",
+  "description": "Siapa jago angka romawi? Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=angkaromawi",
   "start_url": "./play.html?game=angkaromawi",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Susun Kata — BUGGAMES",
+  "name": "Susun Kata",
   "short_name": "Susun Kata",
-  "description": "Susun huruf acak jadi kata yang benar! Mainkan offline, gratis.",
+  "description": "Susun huruf acak jadi kata yang benar! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=anagram",
   "start_url": "./play.html?game=anagram",
   "scope": "./",

@@ -1,7 +1,7 @@
 {
-  "name": "Dots and Boxes — BUGGAMES",
-  "short_name": "Dots and Bo…",
-  "description": "Tutup kotak dengan garis, lawan AI! Mainkan offline, gratis.",
+  "name": "Dots and Boxes",
+  "short_name": "Dots and",
+  "description": "Tutup kotak dengan garis, lawan AI! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=dotsbox",
   "start_url": "./play.html?game=dotsbox",
   "scope": "./",

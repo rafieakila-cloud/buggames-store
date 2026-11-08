@@ -1,7 +1,7 @@
 {
-  "name": "Cocokkan Bug — BUGGAMES",
+  "name": "Cocokkan Bug",
   "short_name": "Cocokkan Bug",
-  "description": "Temukan pasangan bug yang sama! Mainkan offline, gratis.",
+  "description": "Temukan pasangan bug yang sama! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=memory",
   "start_url": "./play.html?game=memory",
   "scope": "./",

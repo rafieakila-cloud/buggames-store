@@ -1,7 +1,7 @@
 {
-  "name": "2048 Bug — BUGGAMES",
+  "name": "2048 Bug",
   "short_name": "2048 Bug",
-  "description": "Gabungkan angka jadi 2048! Mainkan offline, gratis.",
+  "description": "Gabungkan angka jadi 2048! Gratis, offline, tanpa iklan.",
   "id": "./play.html?game=t2048",
   "start_url": "./play.html?game=t2048",
   "scope": "./",
