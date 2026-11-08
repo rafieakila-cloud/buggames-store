@@ -1,0 +1,37 @@
+{
+  "name": "Dots and Boxes — BUGGAMES",
+  "short_name": "Dots and Bo…",
+  "description": "Tutup kotak dengan garis, lawan AI! Mainkan offline, gratis.",
+  "id": "./play.html?game=dotsbox",
+  "start_url": "./play.html?game=dotsbox",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/dotsbox-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/dotsbox-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/dotsbox-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

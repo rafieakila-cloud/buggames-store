@@ -1,0 +1,37 @@
+{
+  "name": "Stack Tower — BUGGAMES",
+  "short_name": "Stack Tower",
+  "description": "Susun balok setinggi mungkin. Timing adalah segalanya! Mainkan offline, gratis.",
+  "id": "./play.html?game=stack",
+  "start_url": "./play.html?game=stack",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/stack-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/stack-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/stack-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

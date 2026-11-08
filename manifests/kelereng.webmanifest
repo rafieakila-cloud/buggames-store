@@ -1,0 +1,37 @@
+{
+  "name": "Kelereng Tembak — BUGGAMES",
+  "short_name": "Kelereng Te…",
+  "description": "Jatuhkan kelereng ke wadah skor! Mainkan offline, gratis.",
+  "id": "./play.html?game=kelereng",
+  "start_url": "./play.html?game=kelereng",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/kelereng-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/kelereng-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/kelereng-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

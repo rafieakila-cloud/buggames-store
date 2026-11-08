@@ -1,0 +1,37 @@
+{
+  "name": "Sudoku Mini — BUGGAMES",
+  "short_name": "Sudoku Mini",
+  "description": "Isi angka 1-4. Tiap baris, kolom, kotak harus unik! Mainkan offline, gratis.",
+  "id": "./play.html?game=sudoku",
+  "start_url": "./play.html?game=sudoku",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/sudoku-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/sudoku-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/sudoku-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+  function renderDownloads() {
+    const installed = getInstalled();
+    const installedSet = new Set(installed);
+    const catOrder = ['3d', 'arcade', 'puzzle', 'kuis'];
+    const sorted = games.slice().sort((a, b) => {
+      const ca = catOrder.indexOf(a.cat), cb = catOrder.indexOf(b.cat);
+      return (ca === -1 ? 99 : ca) - (cb === -1 ? 99 : cb);
+    });
+    const activeEl = document.getElementById('activeDownloads');
+    if (!activeEl) return;
+    document.getElementById('activeEmpty').classList.toggle('hidden', sorted.length !== 0);
+    activeEl.innerHTML = sorted.map(g => {
+      const m = metaOf(g);
+      const owned = installedSet.has(g.id);
+      const tag = { '3d': 'Game 3D', arcade: 'Arcade', puzzle: 'Puzzle', kuis: 'Kuis' }[g.cat] || g.cat;
+      return '<button class="dl-item dl-install-row" data-game="' + g.id + '" style="width:100%;text-align:left;cursor:pointer;border:0;padding:10px">' +
+        '<img class="dl-thumb" src="./icons/covers/' + g.id + '.png" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'./icons/covers/snake.png\'">' +
+        '<div class="dl-info">' +
+          '<div class="dl-name">' + esc(g.name) + '</div>' +
+          '<div class="dl-phase" style="color:' + (owned ? '#4ade80' : '#ffd23f') + '">' + (owned ? 'Terpasang di HP' : 'Gratis \u2022 ' + m.size + ' MB \u2022 \u2605' + m.stars.toFixed(1)) + '</div>' +
+          '<div class="dl-sub"><span>' + esc(tag) + '</span><span>' + (owned ? 'BUKA' : 'INSTALL') + '</span></div>' +
+        '</div>' +
+        '<span class="dl-play">' + (owned ? 'BUKA' : 'INSTALL') + '</span>' +
+      '</button>';
+    }).join('');
+    document.getElementById('historyEmpty').classList.toggle('hidden', installed.length !== 0);
+    document.getElementById('downloadHistory').innerHTML = installed.slice().reverse().map(id => {
+      const g = gameById(id);
+      if (!g) return '';
+      return '<button class="dl-item dl-install-row" data-game="' + g.id + '" style="width:100%;text-align:left;cursor:pointer;border:0;padding:10px">' +
+        '<img class="dl-thumb" src="./icons/covers/' + g.id + '.png" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'./icons/covers/snake.png\'">' +
+        '<div class="dl-info">' +
+          '<div class="dl-name">' + esc(g.name) + '</div>' +
+          '<div class="dl-phase" style="color:#4ade80">Terpasang sebagai aplikasi di HP</div>' +
+          '<div class="dl-sub"><span>Ikon tersedia di layar utama</span><span>BUKA</span></div>' +
+        '</div>' +
+        '<span class="dl-play">BUKA</span>' +
+      '</button>';
+    }).filter(Boolean).join('');
+  }
+

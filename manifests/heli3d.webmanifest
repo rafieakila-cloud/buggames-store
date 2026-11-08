@@ -1,0 +1,37 @@
+{
+  "name": "Helikopter 3D — BUGGAMES",
+  "short_name": "Helikopter …",
+  "description": "Terbang bebas di atas pulau! Tembus cincin sebanyak-banyaknya. Mainkan offline, gratis.",
+  "id": "./play.html?game=heli3d",
+  "start_url": "./play.html?game=heli3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/heli3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/heli3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/heli3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

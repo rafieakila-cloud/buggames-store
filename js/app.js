@@ -8,20 +8,20 @@ window.BG = (function () {
   function loadJSON(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) || fallback; } catch (e) { return fallback; } }
   const storeData = loadJSON(STORE_KEY, { owned: [], history: [] });
   storeData.history = storeData.history || [];
+  /* status terpasang yang asli: dibagi dengan play.html (buggames.installed-apps) */
+  const installedKey = 'buggames.installed-apps';
+  function getInstalled() { try { return JSON.parse(localStorage.getItem(installedKey)) || []; } catch (e) { return []; } }
+  const owns = id => getInstalled().includes(id);
   let deferredPrompt = null;
   const store = loadJSON(LS_KEY, { best: {}, sound: true });
   store.best = store.best || {};
   if (store.sound === undefined) store.sound = true;
   function saveLS() { localStorage.setItem(LS_KEY, JSON.stringify(store)); }
   function saveStore() { localStorage.setItem(STORE_KEY, JSON.stringify(storeData)); }
-  function owns(id) { return storeData.owned.includes(id); }
   const activeDownloads = new Map();
   function activeDownloadFor(id) { return activeDownloads.get(id) || null; }
   function anyActiveDownloads() { return activeDownloads.size > 0; }
-  function markOwned(id) {
-    if (!owns(id)) storeData.owned.push(id);
-    saveStore();
-  }
+  function markOwned(_id) { saveStore(); }
   function pushHistory(g, size) {
     storeData.history.unshift({ id: g.id, name: g.name, size, time: Date.now() });
     if (storeData.history.length > 40) storeData.history.length = 40;
@@ -171,28 +171,13 @@ window.BG = (function () {
     if (tab === 'downloads') renderDownloads();
     sfx('click');
   }
-  function openDetail(id) {
-    const g = gameById(id); if (!g) return;
-    const m = metaOf(g);
-    const best = getBest(id);
-    document.getElementById('detailModal').dataset.id = id;
-    document.getElementById('detailCover').src = coverOf(g);
-    try {
-      document.getElementById('detailShot1').src = coverOf(g);
-      const others = ['f13d', 'heli3d', 'sub3d', 'alien3d', 'jetpack3d', 'ski3d', 'sumo3d', 'bowling3d', 'labyrinth3d'].filter(x => x !== g.id);
-      document.getElementById('detailShot2').src = './icons/covers/' + pick(others) + '.png';
-    } catch (e) {}
-    document.getElementById('detailName').textContent = g.name;
-    document.getElementById('detailDesc').textContent = g.desc || 'Buggy menantang kamu!';
-    document.getElementById('detailRating').textContent = '\u2605 ' + m.stars.toFixed(1);
-    document.getElementById('detailSize').textContent = m.size + ' MB';
-    document.getElementById('detailAge').textContent = m.age;
-    document.getElementById('detailDownloads').textContent = fmtDownloads(m.downloads) + ' unduhan';
-    document.getElementById('detailBest').textContent = best !== undefined ? 'Skor terbaikmu: ' + best : 'Belum pernah dimainkan';
-    updateDetailButton(g);
-    document.getElementById('detailModal').classList.remove('hidden');
-    sfx('click');
+  /* navigasi ke halaman install asli per game */
+  function goToGame(id) {
+    const g = gameById(id);
+    if (!g) return;
+    window.location.assign('./play.html?game=' + encodeURIComponent(id));
   }
+  function openDetail(id) { goToGame(id); }
   function closeDetail() { document.getElementById('detailModal').classList.add('hidden'); }
   function updateDetailButton(g) {
     const btn = document.getElementById('detailBtn');
@@ -289,38 +274,46 @@ window.BG = (function () {
     toastTimer = setTimeout(() => toast.classList.remove('show'), 3600);
   }
   function renderDownloads() {
+    const installed = getInstalled();
+    const installedSet = new Set(installed);
+    const catOrder = ['3d', 'arcade', 'puzzle', 'kuis'];
+    const sorted = games.slice().sort((a, b) => {
+      const ca = catOrder.indexOf(a.cat), cb = catOrder.indexOf(b.cat);
+      return (ca === -1 ? 99 : ca) - (cb === -1 ? 99 : cb);
+    });
     const activeEl = document.getElementById('activeDownloads');
     if (!activeEl) return;
-    const actives = Array.from(activeDownloads.values());
-    document.getElementById('activeEmpty').classList.toggle('hidden', actives.length !== 0);
-    activeEl.innerHTML = actives.map(dl => {
-      const done = (dl.size * dl.pct / 100).toFixed(0);
-      return '<div class="dl-item">' +
-        '<img class="dl-thumb" src="./icons/covers/' + dl.id + '.png" alt="" onerror="this.onerror=null;this.src=\'./icons/covers/snake.png\'">' +
+    document.getElementById('activeEmpty').classList.toggle('hidden', sorted.length !== 0);
+    activeEl.innerHTML = sorted.map(g => {
+      const m = metaOf(g);
+      const owned = installedSet.has(g.id);
+      const tag = { '3d': 'Game 3D', arcade: 'Arcade', puzzle: 'Puzzle', kuis: 'Kuis' }[g.cat] || g.cat;
+      return '<button class="dl-item dl-install-row" data-game="' + g.id + '" style="width:100%;text-align:left;cursor:pointer;border:0;padding:10px">' +
+        '<img class="dl-thumb" src="./icons/covers/' + g.id + '.png" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'./icons/covers/snake.png\'">' +
         '<div class="dl-info">' +
-          '<div class="dl-name">' + esc(dl.name) + '</div>' +
-          '<div class="dl-phase">' + esc(dl.phase) + '</div>' +
-          '<div class="dl-bar"><i style="width:' + dl.pct.toFixed(1) + '%"></i></div>' +
-          '<div class="dl-sub"><span>' + dl.pct.toFixed(0) + '% - ' + done + ' / ' + dl.size + ' MB</span><span>' + (dl.speed ? dl.speed.toFixed(1) + ' MB/s' : '&nbsp;') + '</span></div>' +
+          '<div class="dl-name">' + esc(g.name) + '</div>' +
+          '<div class="dl-phase" style="color:' + (owned ? '#4ade80' : '#ffd23f') + '">' + (owned ? 'Terpasang di HP' : 'Gratis \u2022 ' + m.size + ' MB \u2022 \u2605' + m.stars.toFixed(1)) + '</div>' +
+          '<div class="dl-sub"><span>' + esc(tag) + '</span><span>' + (owned ? 'BUKA' : 'INSTALL') + '</span></div>' +
         '</div>' +
-        '<button class="dl-cancel" data-cancel="' + dl.id + '" aria-label="Batalkan unduhan">\u2715</button>' +
-      '</div>';
+        '<span class="dl-play">' + (owned ? 'BUKA' : 'INSTALL') + '</span>' +
+      '</button>';
     }).join('');
-    const hist = storeData.history;
-    document.getElementById('historyEmpty').classList.toggle('hidden', hist.length !== 0);
-    document.getElementById('downloadHistory').innerHTML = hist.map(h => {
-      const date = new Date(h.time).toLocaleString('id-ID', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
-      return '<div class="dl-item dl-done">' +
-        '<img class="dl-thumb" src="./icons/covers/' + h.id + '.png" alt="" onerror="this.onerror=null;this.src=\'./icons/covers/snake.png\'">' +
+    document.getElementById('historyEmpty').classList.toggle('hidden', installed.length !== 0);
+    document.getElementById('downloadHistory').innerHTML = installed.slice().reverse().map(id => {
+      const g = gameById(id);
+      if (!g) return '';
+      return '<button class="dl-item dl-install-row" data-game="' + g.id + '" style="width:100%;text-align:left;cursor:pointer;border:0;padding:10px">' +
+        '<img class="dl-thumb" src="./icons/covers/' + g.id + '.png" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'./icons/covers/snake.png\'">' +
         '<div class="dl-info">' +
-          '<div class="dl-name">' + esc(h.name) + '</div>' +
-          '<div class="dl-phase">Selesai diunduh - ' + h.size + ' MB</div>' +
-          '<div class="dl-sub"><span>' + esc(date) + '</span></div>' +
+          '<div class="dl-name">' + esc(g.name) + '</div>' +
+          '<div class="dl-phase" style="color:#4ade80">Terpasang sebagai aplikasi di HP</div>' +
+          '<div class="dl-sub"><span>Ikon tersedia di layar utama</span><span>BUKA</span></div>' +
         '</div>' +
-        '<button class="dl-play" data-play="' + h.id + '">MAIN</button>' +
-      '</div>';
-    }).join('');
+        '<span class="dl-play">BUKA</span>' +
+      '</button>';
+    }).filter(Boolean).join('');
   }
+
   function updateDlBadge() {
     const b = document.getElementById('dlBadge');
     if (!b) return;
@@ -411,9 +404,9 @@ window.BG = (function () {
 
     /* delegasi tombol unduhan (batal / main) */
     const activeEl = document.getElementById('activeDownloads');
-    if (activeEl) activeEl.addEventListener('click', e => { const b = e.target.closest('[data-cancel]'); if (b) { sfx('click'); cancelDownload(b.dataset.cancel); } });
+    if (activeEl) activeEl.addEventListener('click', e => { const b = e.target.closest('[data-game]'); if (b) { sfx('pop'); goToGame(b.dataset.game); } });
     const histEl = document.getElementById('downloadHistory');
-    if (histEl) histEl.addEventListener('click', e => { const b = e.target.closest('[data-play]'); if (b) { sfx('pop'); openGame(b.dataset.play); } });
+    if (histEl) histEl.addEventListener('click', e => { const b = e.target.closest('[data-game]'); if (b) { sfx('pop'); goToGame(b.dataset.game); } });
 
     const soundBtn = document.getElementById('soundBtn');
     const soundIcon = on => on

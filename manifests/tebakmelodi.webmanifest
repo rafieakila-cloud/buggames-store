@@ -1,0 +1,37 @@
+{
+  "name": "Tebak Melodi — BUGGAMES",
+  "short_name": "Tebak Melodi",
+  "description": "Dengar nada, tebak judul lagu! Mainkan offline, gratis.",
+  "id": "./play.html?game=tebakmelodi",
+  "start_url": "./play.html?game=tebakmelodi",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/tebakmelodi-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/tebakmelodi-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/tebakmelodi-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

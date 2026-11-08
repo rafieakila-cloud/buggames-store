@@ -1,0 +1,37 @@
+{
+  "name": "Labyrinth 3D — BUGGAMES",
+  "short_name": "Labyrinth 3D",
+  "description": "Kabur dari labirin 3D! Temukan jalan keluar. Mainkan offline, gratis.",
+  "id": "./play.html?game=labyrinth3d",
+  "start_url": "./play.html?game=labyrinth3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/labyrinth3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/labyrinth3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/labyrinth3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

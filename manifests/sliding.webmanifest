@@ -1,0 +1,37 @@
+{
+  "name": "Geser Angka — BUGGAMES",
+  "short_name": "Geser Angka",
+  "description": "Susun angka 1-15 berurutan! Mainkan offline, gratis.",
+  "id": "./play.html?game=sliding",
+  "start_url": "./play.html?game=sliding",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/sliding-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/sliding-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/sliding-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

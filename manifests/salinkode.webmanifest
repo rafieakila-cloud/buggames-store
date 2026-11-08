@@ -1,0 +1,37 @@
+{
+  "name": "Salin Kode — BUGGAMES",
+  "short_name": "Salin Kode",
+  "description": "Pecahkan PIN 4 digit tersembunyi! Mainkan offline, gratis.",
+  "id": "./play.html?game=salinkode",
+  "start_url": "./play.html?game=salinkode",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/salinkode-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/salinkode-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/salinkode-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

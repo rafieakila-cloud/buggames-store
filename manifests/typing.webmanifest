@@ -1,0 +1,37 @@
+{
+  "name": "Uji Ketik — BUGGAMES",
+  "short_name": "Uji Ketik",
+  "description": "Seberapa cepat kamu mengetik? 45 detik! Mainkan offline, gratis.",
+  "id": "./play.html?game=typing",
+  "start_url": "./play.html?game=typing",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/typing-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/typing-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/typing-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

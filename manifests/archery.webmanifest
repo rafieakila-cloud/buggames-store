@@ -1,0 +1,37 @@
+{
+  "name": "Panahan Bug — BUGGAMES",
+  "short_name": "Panahan Bug",
+  "description": "Bidik tepat di tengah papan target! 5 anak panah. Mainkan offline, gratis.",
+  "id": "./play.html?game=archery",
+  "start_url": "./play.html?game=archery",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/archery-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/archery-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/archery-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

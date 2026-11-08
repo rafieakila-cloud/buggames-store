@@ -1,0 +1,37 @@
+{
+  "name": "Pukul Bug! — BUGGAMES",
+  "short_name": "Pukul Bug!",
+  "description": "Pukul bug secepatnya sebelum ngumpet lagi! Mainkan offline, gratis.",
+  "id": "./play.html?game=whack",
+  "start_url": "./play.html?game=whack",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/whack-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/whack-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/whack-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

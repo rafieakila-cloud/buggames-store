@@ -1,0 +1,37 @@
+{
+  "name": "Ketapel Bug — BUGGAMES",
+  "short_name": "Ketapel Bug",
+  "description": "Tembak tumpukan kotak! Mainkan offline, gratis.",
+  "id": "./play.html?game=ketapel",
+  "start_url": "./play.html?game=ketapel",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/ketapel-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/ketapel-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/ketapel-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

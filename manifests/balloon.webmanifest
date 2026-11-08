@@ -1,0 +1,37 @@
+{
+  "name": "Balon Pop — BUGGAMES",
+  "short_name": "Balon Pop",
+  "description": "Letuskan balon yang naik ke langit! Mainkan offline, gratis.",
+  "id": "./play.html?game=balloon",
+  "start_url": "./play.html?game=balloon",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/balloon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/balloon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/balloon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

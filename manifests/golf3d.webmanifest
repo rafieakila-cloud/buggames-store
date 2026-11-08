@@ -1,0 +1,37 @@
+{
+  "name": "Mini Golf 3D — BUGGAMES",
+  "short_name": "Mini Golf 3D",
+  "description": "Pukul bola ke lubang! 3 hole makin susah. Mainkan offline, gratis.",
+  "id": "./play.html?game=golf3d",
+  "start_url": "./play.html?game=golf3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/golf3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/golf3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/golf3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+/* BUGGAMES STORE — halaman install per-game (app page) */
+.play-page .ps-topbar { padding: 10px 12px; gap: 10px; }
+.ps-back { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: var(--ps-chip); color: var(--ps-text); text-decoration: none; flex: none; }
+.ps-back:hover { background: #e5e7eb; }
+
+.play-page .ps-app-head { padding: 10px 16px 6px; }
+.play-page .ps-app-icon { width: 96px; height: 96px; border-radius: 22%; object-fit: cover; box-shadow: 0 3px 10px rgba(0,0,0,.28); }
+.play-page .ps-app-meta h1 { font-size: 1.7rem; }
+.ps-app-size { color: var(--ps-mut); font-size: .78rem; margin-top: 2px; }
+.ps-install-status { min-height: 1.4em; font-size: .78rem; color: var(--ps-green); font-weight: 600; margin: 8px 2px 0; }
+.ps-install-full.installed { background: var(--ps-chip); color: var(--ps-text); }
+
+.play-page .ps-app-section h3 { padding: 0 18px; margin-top: 14px; color: var(--ps-green); text-transform: uppercase; font-size: .72rem; letter-spacing: 2px; }
+.play-page .ps-app-section p { padding: 0 18px; color: var(--ps-mut); font-size: .86rem; line-height: 1.55; }
+
+.ps-game-container-wrap { background: #17102a; border-radius: 18px; margin: 16px 12px; border: 3px solid #140a24; overflow: hidden; }
+.ps-game-container-wrap .game-container { padding: 0; min-height: 0; align-items: center; justify-content: center; background: #17102a; overflow: hidden; display: flex; }
+
+.play-page .ps-games-section { padding-bottom: 20px; }

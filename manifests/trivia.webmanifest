@@ -1,0 +1,37 @@
+{
+  "name": "Kuis Buggy — BUGGAMES",
+  "short_name": "Kuis Buggy",
+  "description": "10 pertanyaan seru seputar bug & dunia! Mainkan offline, gratis.",
+  "id": "./play.html?game=trivia",
+  "start_url": "./play.html?game=trivia",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/trivia-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/trivia-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/trivia-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

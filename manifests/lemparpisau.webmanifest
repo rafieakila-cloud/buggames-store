@@ -1,0 +1,37 @@
+{
+  "name": "Lempar Pisau — BUGGAMES",
+  "short_name": "Lempar Pisau",
+  "description": "Lempar pisau ke balok berputar! Mainkan offline, gratis.",
+  "id": "./play.html?game=lemparpisau",
+  "start_url": "./play.html?game=lemparpisau",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/lemparpisau-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/lemparpisau-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/lemparpisau-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

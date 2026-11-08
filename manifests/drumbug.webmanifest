@@ -1,0 +1,37 @@
+{
+  "name": "Drum Bug — BUGGAMES",
+  "short_name": "Drum Bug",
+  "description": "Tirukan ritme drum! Mainkan offline, gratis.",
+  "id": "./play.html?game=drumbug",
+  "start_url": "./play.html?game=drumbug",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/drumbug-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/drumbug-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/drumbug-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Ski 3D — BUGGAMES",
+  "short_name": "Ski 3D",
+  "description": "Slalom salju! Tiang gate dari salju! Mainkan offline, gratis.",
+  "id": "./play.html?game=ski3d",
+  "start_url": "./play.html?game=ski3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/ski3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/ski3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/ski3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

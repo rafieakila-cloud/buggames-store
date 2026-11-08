@@ -1,0 +1,37 @@
+{
+  "name": "Parking Mobil 3D — BUGGAMES",
+  "short_name": "Parking Mob…",
+  "description": "Parkir mobil ke slot glowing. 3 level makin sempit! Mainkan offline, gratis.",
+  "id": "./play.html?game=parking3d",
+  "start_url": "./play.html?game=parking3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/parking3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/parking3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/parking3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

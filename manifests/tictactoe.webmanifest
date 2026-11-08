@@ -1,0 +1,37 @@
+{
+  "name": "Tiga Serangkai — BUGGAMES",
+  "short_name": "Tiga Serang…",
+  "description": "Halangi 3 di garis lurus vs komputer! Mainkan offline, gratis.",
+  "id": "./play.html?game=tictactoe",
+  "start_url": "./play.html?game=tictactoe",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/tictactoe-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/tictactoe-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/tictactoe-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

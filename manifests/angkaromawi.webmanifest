@@ -1,0 +1,37 @@
+{
+  "name": "Angka Romawi — BUGGAMES",
+  "short_name": "Angka Romawi",
+  "description": "Siapa jago angka romawi? Mainkan offline, gratis.",
+  "id": "./play.html?game=angkaromawi",
+  "start_url": "./play.html?game=angkaromawi",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/angkaromawi-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/angkaromawi-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/angkaromawi-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

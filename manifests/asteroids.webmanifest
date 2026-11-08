@@ -1,0 +1,37 @@
+{
+  "name": "Asteroid Bug — BUGGAMES",
+  "short_name": "Asteroid Bug",
+  "description": "Hancurkan asteroid, jangan sampai kena! Mainkan offline, gratis.",
+  "id": "./play.html?game=asteroids",
+  "start_url": "./play.html?game=asteroids",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/asteroids-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/asteroids-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/asteroids-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

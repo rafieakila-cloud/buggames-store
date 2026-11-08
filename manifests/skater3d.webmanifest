@@ -1,0 +1,37 @@
+{
+  "name": "Skater 3D — BUGGAMES",
+  "short_name": "Skater 3D",
+  "description": "Hujan malam di kota! Kumpulkan bintang koin! Mainkan offline, gratis.",
+  "id": "./play.html?game=skater3d",
+  "start_url": "./play.html?game=skater3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/skater3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/skater3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/skater3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

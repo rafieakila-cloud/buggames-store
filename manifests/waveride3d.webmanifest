@@ -1,0 +1,37 @@
+{
+  "name": "Wave Rider 3D — BUGGAMES",
+  "short_name": "Wave Rider …",
+  "description": "Selancar di atas gelombang raksasa! Mainkan offline, gratis.",
+  "id": "./play.html?game=waveride3d",
+  "start_url": "./play.html?game=waveride3d",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/waveride3d-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/waveride3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/waveride3d-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

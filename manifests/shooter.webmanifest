@@ -1,0 +1,37 @@
+{
+  "name": "Bug Space Raid — BUGGAMES",
+  "short_name": "Bug Space R…",
+  "description": "Tembak alien kutu dari luar angkasa! Mainkan offline, gratis.",
+  "id": "./play.html?game=shooter",
+  "start_url": "./play.html?game=shooter",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/shooter-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/shooter-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/shooter-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

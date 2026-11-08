@@ -1,0 +1,37 @@
+{
+  "name": "Angka Terbesar — BUGGAMES",
+  "short_name": "Angka Terbe…",
+  "description": "Ketuk angka yang PALING BESAR! Mainkan offline, gratis.",
+  "id": "./play.html?game=compare",
+  "start_url": "./play.html?game=compare",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/compare-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/compare-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/compare-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

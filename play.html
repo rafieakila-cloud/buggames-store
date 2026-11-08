@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<title>BUGGAMES — Install game</title>
+<meta name="description" content="Install game BUGGAMES sebagai aplikasi di HP kamu. Offline, gratis, ikon tersendiri." />
+<meta name="theme-color" content="#01875f" />
+<link rel="icon" type="image/png" sizes="192x192" id="appIconLink" href="./icons/apps/f13d-192.png" />
+<script>
+  /* inject manifest + icon per query param (Chrome/Android PWA) */
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search);
+      var id = (q.get('game') || 'f13d').replace(/[^a-zA-Z0-9_-]/g, '');
+      var link = document.createElement('link');
+      link.rel = 'manifest';
+      link.href = './manifests/' + id + '.webmanifest';
+      document.head.appendChild(link);
+      var icon = document.getElementById('appIconLink');
+      icon.href = './icons/apps/' + id + '-192.png';
+      var meta = document.createElement('meta');
+      meta.name = 'theme-color';
+      meta.content = '#241239';
+      document.head.appendChild(meta);
+    } catch (e) { /* fallback to worker cache */ }
+  })();
+</script>
+<link rel="stylesheet" href="./css/style.css?v=16" />
+<link rel="stylesheet" href="./css/playstore.css?v=16" />
+<link rel="stylesheet" href="./css/play.css?v=16" />
+</head>
+<body class="ps-body play-page">
+
+<div class="ps-page">
+  <!-- TOP BAR -->
+  <header class="ps-topbar">
+    <a href="./index.html" class="ps-back" aria-label="Kembali ke toko">
+      <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="ps-logo"><span class="ps-logo-badge">B</span><span class="ps-logo-text">BUGGAMES<small>STORE</small></span></div>
+    <button id="soundBtn" class="ps-avatar" aria-label="Suara"></button>
+  </header>
+
+  <!-- APP HEADER -->
+  <div class="ps-app-head">
+    <img id="appIcon" class="ps-app-icon" src="./icons/apps/f13d-192.png" alt="Ikon game" width="96" height="96" />
+    <div class="ps-app-meta">
+      <h1 id="appName">F1 Bug Grand Prix</h1>
+      <p class="ps-dev" id="appDev">Bawapi Dev</p>
+      <div class="ps-app-sub" id="appMeta">★ 4.9 • 1.2 Jt unduhan • SU</div>
+      <div class="ps-app-size"><span id="appSize">120 MB</span> • <span id="bestPill">Terbaik: -</span></div>
+    </div>
+  </div>
+
+  <!-- INSTALL BUTTON -->
+  <div class="ps-app-install">
+    <button id="installBtn" class="ps-install-btn ps-install-full">INSTALL</button>
+    <p id="installStatus" class="ps-install-status"></p>
+  </div>
+
+  <!-- WHAT'S NEW -->
+  <div class="ps-app-section">
+    <h3>About this game</h3>
+    <p id="appDesc" class="detail-desc">Salip rival!</p>
+  </div>
+  <div class="ps-app-section">
+    <h3>What's new</h3>
+    <p class="detail-desc">Grafik ditingkatkan • Kontrol joystick analog • Offline penuh • 120 MB ringan</p>
+  </div>
+
+  <!-- GAME -->
+  <div class="ps-game-container-wrap">
+    <div id="gameContainer" class="game-container"></div>
+  </div>
+
+  <div class="ps-footer" style="text-align:center;color:#5f6368;font-size:.72rem;padding:16px 12px 30px"><b style="color:#01875f">BUGGAMES STORE</b> • Aplikasi terpasang = ikon di HP kamu!</div>
+</div>
+
+<script src="./js/icons.js?v=16"></script>
+<script src="./js/play.js?v=16"></script>
+<script src="./js/games-action.js?v=16"></script>
+<script src="./js/games-board.js?v=16"></script>
+<script src="./js/games-quiz.js?v=16"></script>
+<script src="./js/games-extras.js?v=16"></script>
+<script src="./js/games-extras-b.js?v=16"></script>
+<script src="./js/games-extras-c.js?v=16"></script>
+<script src="./js/games-extras-d.js?v=16"></script>
+<script src="./js/games-extras-e.js?v=16"></script>
+<script src="./js/engine3d.js?v=16"></script>
+<script src="./js/games-3d.js?v=16"></script>
+<script src="./js/games-3d-extra.js?v=16"></script>
+<script src="./js/games-3d-extra-b.js?v=16"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=16').catch(() => {}));
+  }
+</script>
+</body>
+</html>

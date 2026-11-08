@@ -1,0 +1,37 @@
+{
+  "name": "Lari 100m Bug — BUGGAMES",
+  "short_name": "Lari 100m B…",
+  "description": "Pencet secepat-cepatnya lawan 3 bug! Mainkan offline, gratis.",
+  "id": "./play.html?game=lari100m",
+  "start_url": "./play.html?game=lari100m",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/lari100m-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/lari100m-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/lari100m-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

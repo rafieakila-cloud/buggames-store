@@ -1,0 +1,37 @@
+{
+  "name": "Tangkap Bug — BUGGAMES",
+  "short_name": "Tangkap Bug",
+  "description": "Tangkap bug merah, hindari kutu busuk! Mainkan offline, gratis.",
+  "id": "./play.html?game=catch",
+  "start_url": "./play.html?game=catch",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/catch-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/catch-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/catch-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

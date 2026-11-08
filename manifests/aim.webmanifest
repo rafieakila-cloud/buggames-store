@@ -1,0 +1,37 @@
+{
+  "name": "Latih Bidik — BUGGAMES",
+  "short_name": "Latih Bidik",
+  "description": "Ketuk target yang muncul secepatnya! Mainkan offline, gratis.",
+  "id": "./play.html?game=aim",
+  "start_url": "./play.html?game=aim",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/aim-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/aim-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/aim-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

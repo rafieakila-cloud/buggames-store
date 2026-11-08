@@ -1,0 +1,37 @@
+{
+  "name": "Katak Lompat — BUGGAMES",
+  "short_name": "Katak Lompat",
+  "description": "Lompat dari daun ke daun! Mainkan offline, gratis.",
+  "id": "./play.html?game=kataklompat",
+  "start_url": "./play.html?game=kataklompat",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/kataklompat-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/kataklompat-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/kataklompat-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

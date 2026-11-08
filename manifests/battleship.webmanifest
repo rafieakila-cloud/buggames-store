@@ -1,0 +1,37 @@
+{
+  "name": "Kapal Bug — BUGGAMES",
+  "short_name": "Kapal Bug",
+  "description": "Tenggelamkan kapal komputer duluan! Mainkan offline, gratis.",
+  "id": "./play.html?game=battleship",
+  "start_url": "./play.html?game=battleship",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/battleship-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/battleship-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/battleship-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

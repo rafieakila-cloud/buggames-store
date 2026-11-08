@@ -1,0 +1,37 @@
+{
+  "name": "Potong Kayu — BUGGAMES",
+  "short_name": "Potong Kayu",
+  "description": "Potong kayu tepat di garis hijau! Mainkan offline, gratis.",
+  "id": "./play.html?game=potongkayu",
+  "start_url": "./play.html?game=potongkayu",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/potongkayu-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/potongkayu-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/potongkayu-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Samber Petir — BUGGAMES",
+  "short_name": "Samber Petir",
+  "description": "Sambar petir secepat kilat! Mainkan offline, gratis.",
+  "id": "./play.html?game=samberpetir",
+  "start_url": "./play.html?game=samberpetir",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/samberpetir-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/samberpetir-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/samberpetir-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

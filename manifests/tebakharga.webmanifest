@@ -1,0 +1,37 @@
+{
+  "name": "Tebak Harga — BUGGAMES",
+  "short_name": "Tebak Harga",
+  "description": "Kira-kira berapa harganya? Mainkan offline, gratis.",
+  "id": "./play.html?game=tebakharga",
+  "start_url": "./play.html?game=tebakharga",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/tebakharga-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/tebakharga-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/tebakharga-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Hitung Bug — BUGGAMES",
+  "short_name": "Hitung Bug",
+  "description": "Bug-nya ngumpet sebentar, hitung cepat! Mainkan offline, gratis.",
+  "id": "./play.html?game=countbugs",
+  "start_url": "./play.html?game=countbugs",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "id",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#241239",
+  "background_color": "#17102a",
+  "icons": [
+    {
+      "src": "./icons/apps/countbugs-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/countbugs-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/apps/countbugs-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
