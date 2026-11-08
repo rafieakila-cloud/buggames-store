@@ -18,6 +18,20 @@
 
 .play-page .ps-games-section { padding-bottom: 20px; }
 
+/* ===== lembar panduan install manual ===== */
+.ps-manual-install, #ps-manual-install { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; background: rgba(10,8,18,.72); backdrop-filter: blur(6px); padding: 18px; }
+.ps-manual-card { background: #262a36; border: 3px solid #ffd23f; border-radius: 22px; max-width: 380px; width: 100%; padding: 20px; box-shadow: 0 12px 0 #140a24; color: #f3f4f6; }
+.ps-manual-head { display: flex; align-items: center; gap: 10px; }
+.ps-manual-emoji { font-size: 2.2rem; }
+.ps-manual-head h3 { margin: 0; color: #ffd23f; font-size: 1.1rem; letter-spacing: .5px; flex: 1; }
+.ps-manual-close { width: 36px; height: 36px; border-radius: 50%; border: 2px solid #140a24; background: #3f1d2e; color: #fb7185; font-size: 1rem; font-weight: 900; cursor: pointer; }
+.ps-manual-steps { list-style: none; padding: 0; margin: 16px 0 12px; display: flex; flex-direction: column; gap: 12px; }
+.ps-manual-steps li { display: flex; gap: 12px; align-items: flex-start; background: #1f2330; border: 2px solid #140a24; border-radius: 14px; padding: 12px; }
+.ps-manual-num { flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ffd23f; color: #241239; font-weight: 900; display: grid; place-items: center; font-size: 1.1rem; }
+.ps-manual-steps b { color: #ffd23f; }
+.ps-manual-note { font-size: .78rem; color: #9aa3b2; margin: 0 0 14px; }
+.ps-manual-ok { font-size: .95rem; }
+
 /* ===== mode app (sudah terpasang) ===== */
 body.is-installed .ps-topbar { display: none; }
 body.is-installed .ps-app-head,

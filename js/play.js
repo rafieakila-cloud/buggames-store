@@ -157,7 +157,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('beforeinstallprompt', e => {
     e.preventDefault();
     deferred = e;
-    status.innerHTML = 'Ketuk <b>INSTALL</b> untuk memasang <b>' + esc(g.name) + '</b> sebagai aplikasi di HP kamu!';
+    status.innerHTML = 'Ketuk <b>INSTALL</b> untuk memasang <b>' + BG.esc(g.name) + '</b> sebagai aplikasi di HP kamu!';
   });
   window.addEventListener('appinstalled', () => {
     markInstalled(g.id);
@@ -168,31 +168,62 @@ window.addEventListener('DOMContentLoaded', () => {
     container.scrollIntoView({ behavior: 'smooth' });
   });
 
-  btn.addEventListener('click', async () => {
+  btn.addEventListener('click', () => {
     if (isInstalled()) {
       container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      flashStatus('Aplikasi sudah terpasang!', 'ok');
       BG.sfx('click');
       return;
     }
     if (deferred) {
       try {
         deferred.prompt();
-        const choice = await deferred.userChoice;
-        if (choice && choice.outcome === 'accepted') {
-          markInstalled(g.id);
-          refreshInstallUI();
-          status.textContent = g.name + ' berhasil dipasang! Cari ikon di layar utama HP kamu 🎉';
-          BG.sfx('win');
-        } else {
-          status.textContent = 'Instalasi dibatalkan. Kamu bisa klik INSTALL lagi kapan pun.';
-        }
+        deferred.userChoice.then(choice => {
+          if (choice && choice.outcome === 'accepted') {
+            markInstalled(g.id);
+            refreshInstallUI();
+            flashStatus(g.name + ' berhasil dipasang!', 'ok');
+            BG.sfx('win');
+          } else {
+            flashStatus('Instalasi dibatalkan.', 'info');
+          }
+          deferred = null;
+        });
       } catch (e) {
-        status.textContent = 'Maaf, browser menolak prompt install. Coba menu Chrome ⋮ → "Install app".';
+        showManualInstallSheet();
       }
-      deferred = null;
-    } else {
-      /* browser tidak menyediakan prompt (mis. sudah ter-install / tidak eligible) */
-      status.innerHTML = 'Kalau tombol install tidak merespons, buka menu Chrome <b>⋮ → Install app</b>, atau gunakan <b>Add to Home Screen</b>.';
+      return;
     }
+    /* fallback: panduan manual yang tidak mungkin terlewat */
+    showManualInstallSheet();
   });
+
+  function flashStatus(msg, kind) {
+    status.textContent = msg;
+    status.style.color = kind === 'ok' ? '#4ade80' : (kind === 'info' ? '#ffd23f' : '#4ade80');
+    status.style.fontWeight = '800';
+  }
+  function showManualInstallSheet() {
+    if (document.getElementById('ps-manual-install')) return;
+    const sheet = document.createElement('div');
+    sheet.id = 'ps-manual-install';
+    sheet.innerHTML =
+      '<div class="ps-manual-card">' +
+        '<div class="ps-manual-head"><span class="ps-manual-emoji">📲</span>' +
+          '<h3>Cara pasang di HP</h3>' +
+          '<button class="ps-manual-close" type="button" aria-label="Tutup">✕</button>' +
+        '</div>' +
+        '<ol class="ps-manual-steps">' +
+          '<li><span class="ps-manual-num">1</span><div><b>Ketuk ikon menu ⋮</b><br>di pojok kanan atas browser kamu</div></li>' +
+          '<li><span class="ps-manual-num">2</span><div><b>Pilih “Install app”</b><br>atau “Add to Home screen / Tambahkan ke layar utama”</div></li>' +
+          '<li><span class="ps-manual-num">3</span><div><b>Tap “Install”</b><br>Game akan muncul sebagai aplikasi terpisah di HP kamu!</div></li>' +
+        '</ol>' +
+        '<p class="ps-manual-note">Setiap game dipasang sebagai aplikasi mandiri — ikonnya sendiri, tanpa membuka aplikasi BUGGAMES STORE.</p>' +
+        '<button class="ps-install-btn ps-install-full ps-manual-ok" type="button">OKE, MENGERTI</button>' +
+      '</div>';
+    document.body.appendChild(sheet);
+    sheet.querySelector('.ps-manual-close').addEventListener('click', () => sheet.remove());
+    sheet.querySelector('.ps-manual-ok').addEventListener('click', () => sheet.remove());
+    sheet.addEventListener('click', e => { if (e.target === sheet) sheet.remove(); });
+  }
 });
