@@ -1,0 +1,153 @@
+/* BUGGAMES STORE — tema Android mirip Google Play Store */
+:root {
+  --ps-green: #01875f;
+  --ps-green-dark: #006148;
+  --ps-green-soft: #e4f3ec;
+  --ps-text: #1f1f1f;
+  --ps-mut: #5f6368;
+  --ps-bg: #ffffff;
+  --ps-chip: #f1f3f4;
+}
+
+body.ps-body { background: var(--ps-bg); color: var(--ps-text); font-family: Roboto, "Segoe UI", system-ui, -apple-system, sans-serif; }
+
+.ps-page { min-height: 100vh; padding-bottom: 66px; max-width: 1100px; margin: 0 auto; }
+
+/* ===== TOP BAR ===== */
+.ps-topbar { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--ps-bg); position: sticky; top: 0; z-index: 10; }
+.ps-logo { display: flex; align-items: center; gap: 8px; flex: none; }
+.ps-logo-badge { width: 38px; height: 38px; border-radius: 10px; background: var(--ps-green); color: #fff; font-weight: 900; font-size: 1.25rem; display: grid; place-items: center; }
+.ps-logo-text { font-weight: 700; font-size: 1.05rem; letter-spacing: .4px; line-height: 1; color: var(--ps-text); }
+.ps-logo-text small { display: block; font-size: .58rem; color: var(--ps-green); letter-spacing: 3px; font-weight: 800; }
+.ps-search { flex: 1; display: flex; align-items: center; gap: 10px; background: var(--ps-chip); border-radius: 999px; padding: 9px 16px; color: var(--ps-mut); }
+.ps-search svg { width: 19px; height: 19px; flex: none; }
+.ps-search input { flex: 1; min-width: 0; border: 0; background: none; outline: none; font-size: .95rem; color: var(--ps-text); font-family: inherit; }
+.ps-avatar { flex: none; width: 38px; height: 38px; border-radius: 50%; background: var(--ps-green-soft); border: 0; font-size: 1.15rem; cursor: pointer; }
+.ps-installmini { flex: none; background: var(--ps-green); color: #fff; border: 0; border-radius: 999px; padding: 9px 16px; font-weight: 700; font-size: .78rem; cursor: pointer; font-family: inherit; }
+
+/* ===== CHIPS ===== */
+.ps-chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 14px 4px; scrollbar-width: none; }
+.ps-chips::-webkit-scrollbar { display: none; }
+.ps-chips .chip { border: 1px solid #e5e7eb; background: #fff; color: var(--ps-text); border-radius: 9px; padding: 8px 15px; font-weight: 500; font-size: .82rem; white-space: nowrap; cursor: pointer; font-family: inherit; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
+.ps-chips .chip.active { background: #ceead6; color: #004c1d; border-color: transparent; }
+
+/* ===== HERO (featured) ===== */
+.ps-hero { margin: 12px 14px; border-radius: 18px; overflow: hidden; display: grid; grid-template-columns: 1.15fr 1fr; background: linear-gradient(130deg, #01875f 0%, #00a065 55%, #5fd0a0 100%); position: relative; box-shadow: 0 2px 10px rgba(1,135,95,.35); min-height: 128px; }
+.ps-hero-left { padding: 16px 4px 16px 18px; display: flex; flex-direction: column; justify-content: center; gap: 6px; color: #fff; }
+.ps-hero-tag { font-size: .62rem; letter-spacing: 2px; font-weight: 800; color: rgba(255,255,255,.85); }
+.ps-hero h1 { font-size: clamp(1.25rem, 4.6vw, 1.85rem); line-height: 1.05; margin: 0; color: #fff; }
+.ps-hero p { margin: 0; font-size: .74rem; color: rgba(255,255,255,.88); }
+.ps-hero-art { overflow: hidden; position: relative; }
+.ps-hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ps-install-btn { background: #fff; color: var(--ps-green); border: 0; border-radius: 16px; padding: 8px 22px; font-weight: 800; font-size: .78rem; letter-spacing: .3px; cursor: pointer; align-self: flex-start; margin-top: 6px; font-family: inherit; }
+.ps-install-btn:active { transform: scale(.96); }
+.ps-install-btn[disabled] { opacity: .75; }
+
+/* ===== SECTION HEADS ===== */
+.ps-section-head { display: flex; justify-content: space-between; align-items: baseline; padding: 18px 16px 4px; }
+.ps-section-head h2 { margin: 0; font-size: 1.02rem; font-weight: 700; color: var(--ps-text); }
+.ps-section-head small { color: var(--ps-mut); font-weight: 500; font-size: .72rem; margin-left: 5px; }
+.ps-link { border: 0; background: none; color: var(--ps-green); font-weight: 700; font-size: .78rem; cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+.ps-count { color: var(--ps-green); font-weight: 800; font-size: .65rem; letter-spacing: 1.6px; }
+
+/* ===== RANKED LIST (Top free) ===== */
+.ps-ranked { counter-reset: rank; padding: 0 8px; display: flex; flex-direction: column; }
+.ps-ranked .store-card {
+  position: relative; display: grid; grid-template-columns: 34px 64px 1fr auto; gap: 10px; align-items: center;
+  background: transparent; border: 0; border-bottom: 1px solid #ececf0; border-radius: 0;
+  box-shadow: none; padding: 12px 8px; min-width: 0;
+}
+.ps-ranked .store-card::before { counter-increment: rank; content: counter(rank); color: var(--ps-text); font-weight: 500; font-size: 1.05rem; text-align: center; }
+.ps-ranked .store-card .store-cover { aspect-ratio: 1/1; width: 64px; border-radius: 16px; }
+.ps-ranked .store-card .store-cover img { border-radius: 16px; }
+.ps-ranked .store-card .store-body { padding: 0; min-width: 0; }
+.ps-ranked .store-card .store-body b { font-size: .86rem; font-weight: 500; color: var(--ps-text); }
+.ps-ranked .store-card .store-body small { color: var(--ps-mut); font-size: .68rem; margin: 2px 0 4px; }
+.ps-ranked .store-card .store-meta { font-size: .72rem; color: var(--ps-mut); }
+.ps-ranked .store-card .stars { color: var(--ps-text); font-weight: 500; }
+.ps-ranked .owned-badge { position: absolute; right: 8px; top: 10px; bottom: auto; left: auto; }
+.ps-ranked .ad-badge { display: none; }
+
+/* ===== H-SCROLL (3D row & top row) ===== */
+.ps-hscroll { display: flex; gap: 4px; overflow-x: auto; padding: 4px 14px 14px; scrollbar-width: none; }
+.ps-hscroll::-webkit-scrollbar { display: none; }
+.ps-hscroll .store-card { min-width: 116px; width: 116px; background: transparent; border: 0; box-shadow: none; border-radius: 18px; padding: 6px 2px; }
+.ps-hscroll .store-card .store-cover { aspect-ratio: 1/1; border-radius: 22%; box-shadow: 0 2px 6px rgba(0,0,0,.16); }
+.ps-hscroll .store-card .store-body { padding: 8px 2px 0; }
+.ps-hscroll .store-card .store-body b { font-size: .72rem; font-weight: 500; color: var(--ps-text); text-align: center; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; white-space: normal; overflow: hidden; }
+.ps-hscroll .store-card .store-body small { display: none; }
+.ps-hscroll .store-card .store-meta { justify-content: center; gap: 5px; }
+.ps-hscroll .store-card .stars { font-size: .68rem; }
+.ps-hscroll .ad-badge { display: none; }
+
+/* ===== ALL GAMES GRID ===== */
+.ps-apps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(94px, 1fr)); gap: 16px 8px; padding: 2px 12px 16px; }
+.ps-apps-grid .store-card { background: transparent; border: 0; box-shadow: none; border-radius: 18px; padding: 2px; }
+.ps-apps-grid .store-card .store-cover { aspect-ratio: 1/1; border-radius: 22%; box-shadow: 0 2px 6px rgba(0,0,0,.16); }
+.ps-apps-grid .store-card .store-body { padding: 8px 2px 0; }
+.ps-apps-grid .store-card .store-body b { font-size: .72rem; font-weight: 500; color: var(--ps-text); text-align: center; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; overflow: hidden; min-height: 2.2em; }
+.ps-apps-grid .store-card .store-body small { display: none; }
+.ps-apps-grid .store-card .store-meta { justify-content: center; gap: 4px; }
+.ps-apps-grid .store-card .age-tag { display: none; }
+.ps-apps-grid .owned-badge { display: none; }
+.ps-apps-grid .ad-badge { display: none; }
+
+/* ===== QR & FOOTER ===== */
+.ps-qr { display: flex; gap: 12px; align-items: center; margin: 6px 14px 14px; padding: 12px 14px; background: var(--ps-green-soft); border-radius: 14px; border: 1px dashed #9fd3b8; }
+.ps-qr img { width: 66px; height: 66px; border-radius: 10px; }
+.ps-qr b { font-size: .82rem; color: #004c1d; }
+.ps-qr p { margin: 3px 0 0; font-size: .68rem; color: #1b4332; }
+.ps-footer { text-align: center; color: var(--ps-mut); font-size: .68rem; padding: 18px 12px 90px; }
+.ps-subhead { font-size: .85rem; color: var(--ps-text); padding: 4px 0 8px; font-weight: 600; }
+.ps-hint { color: var(--ps-mut); font-size: .72rem; padding: 2px 0 10px; }
+.ps-empty, .empty-state { color: var(--ps-mut); text-align: center; padding: 24px 10px; }
+.ps-empty b, .empty-state b { color: var(--ps-green); }
+
+/* ===== BOTTOM NAV (Android) ===== */
+.ps-bottomnav { position: fixed; bottom: 0; left: 0; right: 0; height: 62px; background: var(--ps-bg); display: flex; z-index: 30; border-top: 1px solid #e5e7eb; box-shadow: 0 -1px 8px rgba(0,0,0,.07); }
+.ps-bottomnav button { flex: 1; border: 0; background: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; color: var(--ps-mut); cursor: pointer; font-family: inherit; padding: 5px 0 7px; position: relative; }
+.ps-bottomnav svg { width: 25px; height: 25px; }
+.ps-bottomnav span { font-size: .62rem; font-weight: 500; }
+.ps-bottomnav button.on { color: var(--ps-green); }
+.ps-bottomnav button.on svg { stroke: var(--ps-green); }
+.dl-badge { position: absolute; top: 2px; right: calc(50% - 24px); background: #d93025; color: #fff; font-size: .6rem; min-width: 18px; height: 18px; border-radius: 999px; display: grid; place-items: center; padding: 0 4px; border: 0; }
+
+/* ===== GAME VIEW (tetap gelap/arcade) ===== */
+.ps-gamebar { background: #262a36; border-bottom: 3px solid #140a24; }
+
+/* ===== DETAIL (app page) ===== */
+.detail-modal { background: rgba(0,0,0,.38); z-index: 60; display: flex; align-items: flex-end; justify-content: center; padding: 0; }
+.ps-apppage { background: var(--ps-bg); color: var(--ps-text); width: 100%; max-width: 520px; height: 100vh; overflow-y: auto; border-radius: 22px 22px 0 0; border: 0; box-shadow: 0 -2px 20px rgba(0,0,0,.25); padding: 0; }
+.detail-close { background: #f1f3f4; border: 0; color: var(--ps-text); top: 14px; right: 14px; }
+.ps-app-head { display: flex; gap: 14px; align-items: center; padding: 26px 18px 12px; }
+.ps-app-icon { width: 88px; height: 88px; border-radius: 22%; object-fit: cover; box-shadow: 0 2px 6px rgba(0,0,0,.18); }
+.ps-app-meta { min-width: 0; }
+.ps-app-meta h2 { font-size: 1.45rem; line-height: 1.15; margin: 0 0 3px; color: var(--ps-text); }
+.ps-dev { margin: 0; color: var(--ps-green); font-weight: 600; font-size: .86rem; }
+.ps-verified { color: var(--ps-green); }
+.ps-app-sub { color: var(--ps-mut); font-size: .8rem; margin-top: 4px; }
+.ps-app-sub2 { color: var(--ps-mut); font-size: .72rem; margin-top: 6px; }
+.ps-free { color: var(--ps-green); font-weight: 800; }
+.ps-app-install { text-align: center; padding: 6px 18px 2px; border-bottom: 1px solid #ececf0; }
+.ps-install-full { width: 100%; background: var(--ps-green); color: #fff; border-radius: 12px; padding: 14px 20px; font-size: 1rem; letter-spacing: .2px; width: 100%; align-self: stretch; }
+.ps-install-full:active { background: var(--ps-green-dark); }
+.ps-screenshots { display: flex; gap: 10px; overflow-x: auto; padding: 14px 18px; scrollbar-width: none; }
+.ps-screenshots::-webkit-scrollbar { display: none; }
+.ps-shot { flex: none; }
+.ps-shot img { height: 152px; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+.ps-app-section { padding: 10px 18px 4px; }
+.ps-app-section h3 { font-size: .72rem; color: var(--ps-green); text-transform: uppercase; letter-spacing: 2px; margin: 0 0 4px; }
+.detail-desc { color: var(--ps-mut); font-size: .84rem; margin: 0; }
+.detail-best { color: var(--ps-green); font-size: .74rem; font-weight: 600; min-height: 1.2em; margin: 8px 0; }
+.ps-app-foot { text-align: center; color: var(--ps-mut); font-size: .68rem; padding: 10px 18px 26px; border-top: 1px solid #ececf0; }
+.dl-pct { color: var(--ps-mut); }
+
+/* detail hidden helper */
+.ps-tab { display: none; }
+.ps-tab.on { display: block; }
+
+@media (min-width: 721px) {
+  .detail-modal { align-items: center; padding: 26px; }
+  .ps-apppage { border-radius: 24px; height: auto; max-height: 92vh; }
+  .ps-bottomnav { max-width: 1100px; left: 50%; transform: translateX(-50%); border-radius: 18px 18px 0 0; border: 1px solid #e5e7eb; border-bottom: 0; }
+}

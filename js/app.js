@@ -164,7 +164,7 @@ window.BG = (function () {
   }
 
   function go(tab) {
-    document.querySelectorAll('.rail button').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
+    document.querySelectorAll('.ps-bottomnav button').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.id === 'tab-' + tab));
     closeDetail();
     window.scrollTo(0, 0);
@@ -177,6 +177,11 @@ window.BG = (function () {
     const best = getBest(id);
     document.getElementById('detailModal').dataset.id = id;
     document.getElementById('detailCover').src = coverOf(g);
+    try {
+      document.getElementById('detailShot1').src = coverOf(g);
+      const others = ['f13d', 'heli3d', 'sub3d', 'alien3d', 'jetpack3d', 'ski3d', 'sumo3d', 'bowling3d', 'labyrinth3d'].filter(x => x !== g.id);
+      document.getElementById('detailShot2').src = './icons/covers/' + pick(others) + '.png';
+    } catch (e) {}
     document.getElementById('detailName').textContent = g.name;
     document.getElementById('detailDesc').textContent = g.desc || 'Buggy menantang kamu!';
     document.getElementById('detailRating').textContent = '\u2605 ' + m.stars.toFixed(1);
@@ -399,6 +404,8 @@ window.BG = (function () {
       else startDownload(g);
     });
     document.getElementById('heroBtn').addEventListener('click', () => openDetail('f13d'));
+    const seeAll = document.getElementById('seeAllLink');
+    if (seeAll) seeAll.addEventListener('click', () => go('games'));
     document.getElementById('backBtn').addEventListener('click', () => { sfx('click'); closeGame(); if (location.hash) history.pushState({}, '', location.pathname); });
     window.addEventListener('popstate', () => { if (currentGameId) closeGame(); });
 

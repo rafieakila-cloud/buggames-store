@@ -3,116 +3,110 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-<title>BUGGAMES STORE — 101 Game Offline di Saku Kamu!</title>
-<meta name="description" content="BUGGAMES STORE: toko game Buggy si maskot bug! 101 game — 20 game 3D balapan, helikopter & labirin, plus arcade, puzzle dan kuis. Unduh gratis, langsung main di aplikasi, offline, tanpa iklan tersembunyi." />
-<meta name="theme-color" content="#241239" />
+<title>BUGGAMES STORE — Install game Android, gratis!</title>
+<meta name="description" content="BUGGAMES STORE: toko game Android bergaya Play Store! 101 game — 20 game 3D (F1 Bug Grand Prix, helikopter, labirin...). Unduh gratis, jalan offline, tanpa iklan nyata." />
+<meta name="theme-color" content="#01875f" />
 <link rel="manifest" href="./manifest.webmanifest" />
 <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
 <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
 <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
-<link rel="stylesheet" href="./css/style.css?v=12" />
+<link rel="stylesheet" href="./css/style.css?v=13" />
+<link rel="stylesheet" href="./css/playstore.css?v=13" />
 </head>
-<body>
+<body class="ps-body">
 
-<div class="app">
-  <aside class="rail">
-    <div class="logo">B</div>
-    <button data-tab="home" class="on"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span><small>Beranda</small></button>
-    <button data-tab="games"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="9" r="1.6"/><circle cx="15.5" cy="9" r="1.6"/><path d="M8 15h8"/></svg></span><small>Semua</small></button>
-    <button data-tab="3d"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 6-9 6-9-6z"/><path d="M3 12l9 6 9-6"/><path d="M3 18l9 6 9-6" stroke-dasharray="2 3"/></svg></span><small>3D</small></button>
-    <button data-tab="library"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h12v16H4z"/><path d="M16 8h4v12h-4"/><path d="M8 9h4M8 13h4"/></svg></span><small>Terpasang</small></button>
-    <button data-tab="downloads" class="dl-tab"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13"/><path d="M6 11l6 6 6-6"/><path d="M5 21h14"/></svg><i id="dlBadge" class="dl-badge hidden">1</i></span><small>Unduhan</small></button>
-    <div class="bug" id="mascotHome" aria-hidden="true"></div>
-  </aside>
+<div class="ps-page">
 
-  <div class="mainwrap">
-    <header>
-      <div class="hleft">
-        <span class="store">BUGGAMES<small class="store-badge">STORE</small></span>
-        <small>by Bawapi • Anti Gabut Club</small>
+  <!-- ===== TOP BAR (Play Store) ===== -->
+  <header class="ps-topbar">
+    <div class="ps-logo"><span class="ps-logo-badge">B</span><span class="ps-logo-text">BUGGAMES<small>STORE</small></span></div>
+    <div class="ps-search">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="searchInput" type="text" placeholder="Search apps & games" autocomplete="off" />
+    </div>
+    <button id="installBtn" class="ps-installmini hidden">GET</button>
+    <button id="soundBtn" class="ps-avatar" aria-label="Suara">🐞</button>
+  </header>
+
+  <main id="tab-home" class="ps-tab tab on">
+    <div class="ps-chips" id="catChips"></div>
+
+    <!-- Featured -->
+    <section class="ps-hero">
+      <div class="ps-hero-left">
+        <span class="ps-hero-tag">EDITOR'S CHOICE</span>
+        <h1>F1 Bug Grand Prix</h1>
+        <p>3 lap • 3D • Kursi rendah, sayap F1, kecepatan penuh!</p>
+        <button class="ps-install-btn" id="heroBtn">Install</button>
       </div>
-      <div class="search"><input id="searchInput" type="text" placeholder="Cari game... misal: balap, kuis, ular" autocomplete="off" /><button aria-label="Cari">⌕</button></div>
-      <div class="right">
-        <button id="installBtn" class="install-mini hidden">+ Install</button>
-        <button id="soundBtn" class="icon-btn" aria-label="Suara on/off"></button>
-      </div>
-    </header>
+      <div class="ps-hero-art"><img src="./icons/covers/f13d.png" alt="F1 Bug Grand Prix cover" /></div>
+    </section>
 
-    <main>
-      <!-- BERANDA -->
-      <section id="tab-home" class="tab on">
-        <div class="hero">
-          <div class="himg" id="heroImg" style="background:linear-gradient(135deg,#241239,#7c3aed 60%,#3a2054)">
-            <span class="price">FREE</span>
-            <span class="hero-badge">F1 GRAND PRIX</span>
-            <h2 id="heroTitle">F1 BUG GRAND PRIX</h2>
-            <p id="heroDesc">F1 style 3D! Kursi rendah, sayap F1, 3 lap blazing. Dev Bawapi • Offline</p>
-            <button id="heroBtn">Lihat &amp; Unduh</button>
-          </div>
-          <div class="hside">
-            <div class="mini" data-go="games"><b>101 Game</b><small>Semua gratis &amp; offline</small></div>
-            <div class="mini2" data-go="library"><b>Terpasang</b><small><span id="miniInstalled">0</span> game di HP kamu</small></div>
-          </div>
-        </div>
+    <!-- Top charts (ranked free) -->
+    <section>
+      <div class="ps-section-head"><h2>Top charts — Top free</h2><button class="ps-link" id="seeAllLink">See all</button></div>
+      <div id="topGamesRow" class="ps-ranked"></div>
+    </section>
 
-        <div class="qr-banner">
-          <img src="./icons/qr-install.png?v=12" alt="QR code untuk install BUGGAMES di Android" width="72" height="72" />
-          <div>
-            <b>Scan &amp; install di HP!</b>
-            <p>Scan → Chrome → menu ⋮ → <b>Install app</b>. BUGGAMES jadi aplikasi beneran!</p>
-          </div>
-        </div>
+    <!-- Recommended 3D games horizontal -->
+    <section>
+      <div class="ps-section-head"><h2>3D Games for Buggy 🐞</h2><span class="ps-count">20 GAME</span></div>
+      <div id="row3d" class="ps-hscroll"></div>
+    </section>
 
-        <div class="section-head"><h3>🔝 TOP GAMES</h3><span class="ad-tag">IKLAN</span></div>
-        <div id="topGamesRow" class="trend"></div>
+    <!-- QR share banner -->
+    <div class="ps-qr">
+      <img src="./icons/qr-install.png?v=13" alt="QR code install BUGGAMES" width="66" height="66" />
+      <div><b>Pasang di Android!</b><p>Scan → Chrome → ⋮ → <b>Install app</b>.</p></div>
+    </div>
+  </main>
 
-        <div class="section-head"><h3>🎮 GAME 3D TERPOPULER</h3><span class="count-tag">20 GAME</span></div>
-        <div id="row3d" class="trend"></div>
-      </section>
+  <!-- ===== SEMUA GAME ===== -->
+  <section id="tab-games" class="ps-tab tab">
+    <div class="ps-section-head"><h2>All games <small>(101)</small></h2></div>
+    <div id="gridAll" class="ps-apps-grid"></div>
+    <div id="gridAllEmpty" class="empty-state hidden"><h3>No results</h3><p>Try another keyword, e.g. “F1”, “kuis” or “ular”.</p></div>
+  </section>
 
-      <!-- SEMUA GAME -->
-      <section id="tab-games" class="tab">
-        <h2>Semua Game <small class="muted">(<span id="allCount">101</span>)</small></h2>
-        <div class="filters" id="catChips"></div>
-        <div id="gridAll" class="grid"></div>
-        <div id="gridAllEmpty" class="empty-state hidden"><h3>Game-nya belum ketemu...</h3><p>Coba kata kunci lain, misal “balap”, “kuis”, atau “ular”.</p></div>
-      </section>
+  <!-- ===== 3D ===== -->
+  <section id="tab-3d" class="ps-tab tab">
+    <div class="ps-section-head"><h2>3D games <small>(all different!)</small></h2></div>
+    <div id="grid3d" class="ps-apps-grid"></div>
+  </section>
 
-      <!-- 3D -->
-      <section id="tab-3d" class="tab">
-        <h2>Game 3D <small class="muted">(20 — beda-beda semua!)</small></h2>
-        <p class="muted">Balap, helikopter, labirin raycasting, bowling, mini golf — semuanya 3D.</p>
-        <div id="grid3d" class="grid"></div>
-      </section>
+  <!-- ===== UNDUHAN ===== -->
+  <section id="tab-downloads" class="ps-tab tab">
+    <div class="ps-section-head"><h2>Downloads &amp; updates</h2><span class="ps-count" id="dlBadge2">0</span></div>
+    <div id="activeDownloads" class="dl-list"></div>
+    <div id="activeEmpty" class="ps-empty hidden"><p>Tidak ada unduhan berjalan. Tap <b>Install</b> di game favoritmu!</p></div>
+    <h3 class="ps-subhead">Riwayat unduhan</h3>
+    <div id="downloadHistory" class="dl-list"></div>
+    <div id="historyEmpty" class="ps-empty hidden"><p>Belum ada riwayat.</p></div>
+  </section>
 
-      <!-- UNDUHAN -->
-      <section id="tab-downloads" class="tab">
-        <h2>Unduhan</h2>
-        <p class="muted">Download kamu berjalan dan riwayatnya di sini. Bisa banyak sekaligus!</p>
-        <div class="section-head"><h3>⬇ SEDANG BERJALAN</h3></div>
-        <div id="activeDownloads" class="dl-list"></div>
-        <div id="activeEmpty" class="empty-state hidden"><p>Tidak ada unduhan berjalan. Klik UNDUH di game favoritmu!</p></div>
-        <div class="section-head"><h3>📋 RIWAYAT UNDUHAN</h3></div>
-        <div id="downloadHistory" class="dl-list"></div>
-        <div id="historyEmpty" class="empty-state hidden"><p>Belum ada riwayat. Game yang selesai diunduh akan muncul di sini.</p></div>
-      </section>
+  <!-- ===== TERPASANG ===== -->
+  <section id="tab-library" class="ps-tab tab">
+    <div class="ps-section-head"><h2>Installed <small>(<span id="libraryCount">0</span>)</small></h2></div>
+    <p class="ps-hint">Games you've downloaded — open them anytime, offline.</p>
+    <div id="gridLibrary" class="ps-apps-grid"></div>
+    <div id="gridLibraryEmpty" class="empty-state"><h3>Nothing installed yet</h3><p>Download a game from the store and it lands here.</p></div>
+  </section>
 
-      <!-- TERPASANG -->
-      <section id="tab-library" class="tab">
-        <h2>Terpasang <small class="muted">(<span id="libraryCount">0</span>)</small></h2>
-        <p class="muted">Game yang sudah kamu unduh — bisa main offline kapan pun.</p>
-        <div id="gridLibrary" class="grid"></div>
-        <div id="gridLibraryEmpty" class="empty-state"><h3>Belum ada game terpasang</h3><p>Unduh game dulu dari tab Semua Game — gratis, tanpa akun!</p></div>
-      </section>
-    </main>
-
-    <footer class="foot"><b>BUGGAMES STORE</b> • 101 game • gratis • tanpa iklan mengganggu • skor tersimpan di HP kamu</footer>
-  </div>
+  <footer class="ps-footer"><b>BUGGAMES STORE</b> • 101 games • free • offline • made by Bawapi</footer>
 </div>
 
-<!-- GAME VIEW -->
+<!-- ===== BOTTOM NAV (Android) ===== -->
+<nav class="ps-bottomnav">
+  <button data-tab="home" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v9h14v-9"/></svg><span>For you</span></button>
+  <button data-tab="games"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="10" rx="4"/><path d="M9 12h.01M15 12h.01M7.5 10.5v3M15 10v4M12 10v4"/></svg><span>Games</span></button>
+  <button data-tab="3d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 6-9 6-9-6z"/><path d="M3 12l9 6 9-6"/></svg><span>3D</span></button>
+  <button data-tab="downloads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M6 11l6 6 6-6M5 21h14"/></svg><span>Downloads<i id="dlBadge" class="dl-badge hidden">1</i></span></button>
+  <button data-tab="library"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h12v16H4z"/><path d="M16 8h4v12h-4"/></svg><span>Installed</span></button>
+</nav>
+
+<!-- ===== GAME VIEW ===== -->
 <div id="gameView" class="game-view hidden" aria-label="Sedang bermain">
-  <div class="game-topbar">
+  <div class="game-topbar ps-gamebar">
     <button id="backBtn" class="back-btn" aria-label="Kembali ke toko">←</button>
     <div id="gameTitle" class="game-title">Game</div>
     <div id="gameBest" class="game-best">Terbaik: –</div>
@@ -120,49 +114,63 @@
   <div id="gameContainer" class="game-container"></div>
 </div>
 
-<!-- DETAIL / DOWNLOAD MODAL -->
+<!-- ===== DETAIL MODAL (Play Store app page) ===== -->
 <div id="detailModal" class="detail-modal hidden" role="dialog" aria-modal="true">
-  <div class="detail-card">
+  <div class="detail-card ps-apppage">
     <button id="detailClose" class="detail-close" aria-label="Tutup">✕</button>
-    <div class="detail-hero"><img id="detailCover" src="./icons/covers/balap3d.png" alt="Cover game" /></div>
-    <div class="detail-body">
-      <h2 id="detailName">Balap Mobil 3D</h2>
-      <p class="detail-dev">Bawapi Dev • <span class="age-tag" id="detailAge">SU</span></p>
-      <div class="detail-stats">
-        <div><b id="detailRating">★ 4.9</b><small>Rating</small></div>
-        <div><b id="detailSize">120 MB</b><small>Ukuran</small></div>
-        <div><b id="detailDownloads">1.2 Jt</b><small>Unduhan</small></div>
-      </div>
-      <p id="detailDesc" class="detail-desc">Salip rival!</p>
-      <p id="detailBest" class="detail-best">Belum pernah dimainkan</p>
-      <button id="detailBtn" class="btn btn-lime btn-block">⬇ UNDUH</button>
-      <div id="dlProgress" class="dl-progress hidden">
-        <div class="dl-bar"><i></i></div>
-        <span class="dl-pct">0%</span>
+    <div class="ps-app-head">
+      <img id="detailCover" src="./icons/covers/f13d.png" alt="App icon" class="ps-app-icon" />
+      <div class="ps-app-meta">
+        <h2 id="detailName">F1 Bug Grand Prix</h2>
+        <p id="detailDev" class="ps-dev">Bawapi Dev <span class="ps-verified">✓</span></p>
+        <div id="detailStats" class="ps-app-sub"><span id="detailRating">★ 4.9</span><span> • </span><span id="detailDownloads">1.2 Jt</span></div>
       </div>
     </div>
+    <div class="ps-app-install">
+      <button id="detailBtn" class="ps-install-btn ps-install-full">Install</button>
+      <div class="ps-app-sub2"><span id="detailSize">120 MB</span> · <span id="detailAge">SU</span> · <span class="ps-free">FREE</span></div>
+      <p id="detailBest" class="detail-best"></p>
+    </div>
+    <div class="ps-screenshots">
+      <div class="ps-shot"><img id="detailShot1" src="./icons/covers/f13d.png" alt="screenshot 1" /></div>
+      <div class="ps-shot"><img id="detailShot2" src="./icons/covers/heli3d.png" alt="screenshot 2" /></div>
+    </div>
+    <div class="ps-app-section">
+      <h3>About this game</h3>
+      <p id="detailDesc" class="detail-desc">Salip rival!</p>
+    </div>
+    <div class="ps-app-section">
+      <h3>What's new</h3>
+      <p class="detail-desc">Graphics ditingkatkan • Kontrol joystick analog • Offline penuh</p>
+    </div>
+    <div id="dlProgress" class="dl-progress hidden">
+      <div class="dl-bar"><i></i></div>
+      <span class="dl-pct">0%</span>
+    </div>
+    <div class="ps-app-foot"><span>Buggames Store v13 • 101 games</span></div>
   </div>
 </div>
 
 <div id="toast" class="toast hidden" role="status"><span class="toast-icon">✓</span><span id="toastText">Berhasil!</span></div>
+<div id="mascotHome" style="display:none"></div>
 
-<script src="./js/icons.js?v=12"></script>
-<script src="./js/app.js?v=12"></script>
-<script src="./js/games-action.js?v=12"></script>
-<script src="./js/games-board.js?v=12"></script>
-<script src="./js/games-quiz.js?v=12"></script>
-<script src="./js/games-extras.js?v=12"></script>
-<script src="./js/games-extras-b.js?v=12"></script>
-<script src="./js/games-extras-c.js?v=12"></script>
-<script src="./js/games-extras-d.js?v=12"></script>
-<script src="./js/games-extras-e.js?v=12"></script>
-<script src="./js/engine3d.js?v=12"></script>
-<script src="./js/games-3d.js?v=12"></script>
-<script src="./js/games-3d-extra.js?v=12"></script>
-<script src="./js/games-3d-extra-b.js?v=12"></script>
+<script src="./js/icons.js?v=13"></script>
+<script src="./js/app.js?v=13"></script>
+<script src="./js/games-action.js?v=13"></script>
+<script src="./js/games-board.js?v=13"></script>
+<script src="./js/games-quiz.js?v=13"></script>
+<script src="./js/games-extras.js?v=13"></script>
+<script src="./js/games-extras-b.js?v=13"></script>
+<script src="./js/games-extras-c.js?v=13"></script>
+<script src="./js/games-extras-d.js?v=13"></script>
+<script src="./js/games-extras-e.js?v=13"></script>
+<script src="./js/engine3d.js?v=13"></script>
+<script src="./js/games-3d.js?v=13"></script>
+<script src="./js/games-3d-extra.js?v=13"></script>
+<script src="./js/games-3d-extra-b.js?v=13"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=12').catch(() => {}));
+    window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=13').catch(() => {}));
   }
 </script>
 </body>
